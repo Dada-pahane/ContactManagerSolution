@@ -1,0 +1,78 @@
+2025-09-14 16:14:55.703 +05:30 [INF] User profile is available. Using 'C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-09-14 16:14:56.093 +05:30 [INF] Now listening on: http://localhost:5076
+2025-09-14 16:14:56.553 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5076/ - -
+2025-09-14 16:14:56.746 +05:30 [WRN] Failed to determine the https port for redirect.
+2025-09-14 16:14:56.759 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /
+2025-09-14 16:15:00.037 +05:30 [INF] Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+2025-09-14 16:15:01.481 +05:30 [INF] Executed DbCommand (96ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__get_Item_0
+2025-09-14 16:15:01.840 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__user_Id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2025-09-14 16:15:01.984 +05:30 [INF] Executed DbCommand (10ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-09-14 16:15:02.046 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-09-14 16:15:02.114 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__role_Id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2025-09-14 16:15:02.187 +05:30 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Index (ContactManager.UI)'
+2025-09-14 16:15:02.277 +05:30 [INF] Route matched with {action = "Index", controller = "Persons", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderOptions) on controller CRUDExample.Controllers.PersonsController (ContactManager.UI).
+2025-09-14 16:15:02.330 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-14 16:15:02.333 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-14 16:15:02.336 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-14 16:15:02.341 +05:30 [INF] PersonsListActionFilter.OnActionExecuting method
+2025-09-14 16:15:02.351 +05:30 [INF] Index action method of PersonsController
+2025-09-14 16:15:02.366 +05:30 [INF] GetFilteredPersons of PersonsService
+2025-09-14 16:15:02.374 +05:30 [INF] GetFilteredPersons of PersonsRepository
+2025-09-14 16:15:02.560 +05:30 [INF] Executed DbCommand (14ms) [Parameters=[@__searchString_0='?' (Size = 40)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+WHERE (@__searchString_0 LIKE N'') OR (CHARINDEX(@__searchString_0, [p].[PersonName]) > 0)
+2025-09-14 16:15:02.733 +05:30 [INF] Time for Filtered Persons from Database completed in 358.4 ms
+2025-09-14 16:15:02.770 +05:30 [INF] GetSortedPersons of PersonsService
+2025-09-14 16:15:02.810 +05:30 [INF] PersonsListActionFilter.OnActionExecuted method
+2025-09-14 16:15:03.176 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-14 16:15:03.182 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-14 16:15:03.184 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-14 16:15:03.192 +05:30 [INF] PersonsListResultFilter.OnResultExecutionAsync - before
+2025-09-14 16:15:03.217 +05:30 [INF] Executing ViewResult, running view Index.
+2025-09-14 16:15:10.011 +05:30 [INF] Executed ViewResult - view Index executed in 6796.4797ms.
+2025-09-14 16:15:10.019 +05:30 [INF] PersonsListResultFilter.OnResultExecutionAsync - after
+2025-09-14 16:15:10.029 +05:30 [INF] Executed action CRUDExample.Controllers.PersonsController.Index (ContactManager.UI) in 7741.1944ms
+2025-09-14 16:15:10.037 +05:30 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Index (ContactManager.UI)'
+2025-09-14 16:15:10.042 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5076/_vs/browserLink - -
+2025-09-14 16:15:10.042 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5076/_framework/aspnetcore-browser-refresh.js - -
+2025-09-14 16:15:10.054 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Sun, 14 Sep 2025 10:45:09 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Last-Modified: 2025-09-14 16:15
+Pragma: [Redacted]
+Set-Cookie: [Redacted]
+Transfer-Encoding: chunked
+My-Key-From-Global: [Redacted]
+MyKey-FromAction: [Redacted]
+My-Key-From-Controller: [Redacted]
+2025-09-14 16:15:10.059 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5076/_framework/aspnetcore-browser-refresh.js - - - 200 12366 application/javascript;+charset=utf-8 15.7552ms
+2025-09-14 16:15:10.078 +05:30 [INF] HTTP GET / responded 200 in 13305.4756 ms
+2025-09-14 16:15:10.148 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5076/ - - - 200 - text/html;+charset=utf-8 13608.0242ms
+2025-09-14 16:15:10.244 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5076/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 202.3372ms

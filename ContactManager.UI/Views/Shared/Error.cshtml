@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "Error Page";
+}
+
+<div class="container mt-5">
+    <h1 class="text-danger">Something went wrong 😢</h1>
+    <p>We’re sorry, an unexpected error occurred.</p>
+
+    <hr />
+
+    <h4>Details</h4>
+    <p><strong>Path:</strong> @ViewBag.ExceptionPath</p>
+    <p><strong>Message:</strong> @ViewBag.ExceptionMessage</p>
+
+    @if (Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") == "Development")
+    {
+        <div class="alert alert-warning">
+            <h5>Stack Trace</h5>
+            <pre>@ViewBag.StackTrace</pre>
+        </div>
+    }
+
+    <a class="btn btn-primary" href="/">Back to Home</a>
+</div>

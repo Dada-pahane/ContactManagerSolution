@@ -1,0 +1,1000 @@
+2025-09-15 08:41:59.309 +05:30 [INF] User profile is available. Using 'C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-09-15 08:41:59.815 +05:30 [INF] Now listening on: https://localhost:5076
+2025-09-15 08:42:01.712 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/ - -
+2025-09-15 08:42:01.852 +05:30 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /
+2025-09-15 08:42:01.925 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-09-15 08:42:01.958 +05:30 [INF] AuthenticationScheme: Identity.Application was challenged.
+2025-09-15 08:42:01.961 +05:30 [INF] Response:
+StatusCode: 302
+Location: https://localhost:5076/Account/Login?ReturnUrl=%2F
+2025-09-15 08:42:01.967 +05:30 [INF] HTTP GET / responded 302 in 117.6422 ms
+2025-09-15 08:42:01.986 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/ - - - 302 0 - 280.3020ms
+2025-09-15 08:42:01.988 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/Account/Login?ReturnUrl=%2F - -
+2025-09-15 08:42:01.993 +05:30 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /Account/Login
+2025-09-15 08:42:02.018 +05:30 [INF] Executing endpoint 'ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI)'
+2025-09-15 08:42:02.089 +05:30 [INF] Route matched with {action = "Login", controller = "Account", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller ContactManager.UI.Controllers.AccountController (ContactManager.UI).
+2025-09-15 08:42:02.348 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-15 08:42:02.351 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-15 08:42:02.373 +05:30 [INF] Executing ViewResult, running view Login.
+2025-09-15 08:42:03.150 +05:30 [INF] Executed ViewResult - view Login executed in 786.7671ms.
+2025-09-15 08:42:03.156 +05:30 [INF] Executed action ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI) in 1063.5313ms
+2025-09-15 08:42:03.159 +05:30 [INF] Executed endpoint 'ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI)'
+2025-09-15 08:42:03.160 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Mon, 15 Sep 2025 03:12:02 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+Set-Cookie: [Redacted]
+My-Key-From-Global: [Redacted]
+X-Frame-Options: [Redacted]
+2025-09-15 08:42:03.161 +05:30 [INF] HTTP GET /Account/Login responded 200 in 1168.3058 ms
+2025-09-15 08:42:03.166 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/Stylesheet.css - -
+2025-09-15 08:42:03.166 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/_framework/aspnetcore-browser-refresh.js - -
+2025-09-15 08:42:03.167 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/_vs/browserLink - -
+2025-09-15 08:42:03.175 +05:30 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /Stylesheet.css
+2025-09-15 08:42:03.182 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/Account/Login?ReturnUrl=%2F - - - 200 - text/html;+charset=utf-8 1193.9871ms
+2025-09-15 08:42:03.183 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/_framework/aspnetcore-browser-refresh.js - - - 200 12366 application/javascript;+charset=utf-8 16.5573ms
+2025-09-15 08:42:03.228 +05:30 [INF] Sending file. Request path: '/Stylesheet.css'. Physical path: 'C:\HarshaGlobal\DadassahebParctice\ContactManagerSolution\ContactManager.UI\wwwroot\StyleSheet.css'
+2025-09-15 08:42:03.231 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: text/css
+Date: Mon, 15 Sep 2025 03:12:02 GMT
+Server: Kestrel
+Accept-Ranges: bytes
+ETag: [Redacted]
+Last-Modified: Thu, 26 Jun 2025 15:31:58 GMT
+Content-Length: 10279
+2025-09-15 08:42:03.233 +05:30 [INF] HTTP GET /Stylesheet.css responded 200 in 60.8935 ms
+2025-09-15 08:42:03.236 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/Stylesheet.css - - - 200 10279 text/css 70.3674ms
+2025-09-15 08:42:03.264 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 97.1808ms
+2025-09-15 08:42:03.290 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/jquery.validate.unobtrusive.min.js - -
+2025-09-15 08:42:03.292 +05:30 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /jquery.validate.unobtrusive.min.js
+2025-09-15 08:42:03.350 +05:30 [INF] Sending file. Request path: '/jquery.validate.unobtrusive.min.js'. Physical path: 'C:\HarshaGlobal\DadassahebParctice\ContactManagerSolution\ContactManager.UI\wwwroot\jquery.validate.unobtrusive.min.js'
+2025-09-15 08:42:03.356 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/javascript
+Date: Mon, 15 Sep 2025 03:12:02 GMT
+Server: Kestrel
+Accept-Ranges: bytes
+ETag: [Redacted]
+Last-Modified: Thu, 26 Jun 2025 15:31:58 GMT
+Content-Length: 5867
+2025-09-15 08:42:03.358 +05:30 [INF] HTTP GET /jquery.validate.unobtrusive.min.js responded 200 in 66.1538 ms
+2025-09-15 08:42:03.360 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/jquery.validate.unobtrusive.min.js - - - 200 5867 application/javascript 70.0668ms
+2025-09-15 08:42:25.733 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/Account/Login?ReturnUrl=%2F - -
+2025-09-15 08:42:25.740 +05:30 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /Account/Login
+2025-09-15 08:42:25.746 +05:30 [INF] Executing endpoint 'ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI)'
+2025-09-15 08:42:25.750 +05:30 [INF] Route matched with {action = "Login", controller = "Account", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller ContactManager.UI.Controllers.AccountController (ContactManager.UI).
+2025-09-15 08:42:25.772 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-15 08:42:25.787 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-15 08:42:25.801 +05:30 [INF] Executing ViewResult, running view Login.
+2025-09-15 08:42:25.808 +05:30 [INF] Executed ViewResult - view Login executed in 7.2544ms.
+2025-09-15 08:42:25.819 +05:30 [INF] Executed action ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI) in 64.6928ms
+2025-09-15 08:42:25.821 +05:30 [INF] Executed endpoint 'ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI)'
+2025-09-15 08:42:25.823 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Mon, 15 Sep 2025 03:12:24 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+My-Key-From-Global: [Redacted]
+2025-09-15 08:42:25.824 +05:30 [INF] HTTP GET /Account/Login responded 200 in 83.8914 ms
+2025-09-15 08:42:25.827 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/Account/Login?ReturnUrl=%2F - - - 200 - text/html;+charset=utf-8 93.7049ms
+2025-09-15 08:42:34.961 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/Account/Login?ReturnUrl=%2F - -
+2025-09-15 08:42:34.967 +05:30 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /Account/Login
+2025-09-15 08:42:34.970 +05:30 [INF] Executing endpoint 'ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI)'
+2025-09-15 08:42:34.972 +05:30 [INF] Route matched with {action = "Login", controller = "Account", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller ContactManager.UI.Controllers.AccountController (ContactManager.UI).
+2025-09-15 08:42:34.992 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-15 08:42:34.995 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-15 08:42:34.998 +05:30 [INF] Executing ViewResult, running view Login.
+2025-09-15 08:42:35.005 +05:30 [INF] Executed ViewResult - view Login executed in 6.935ms.
+2025-09-15 08:42:35.009 +05:30 [INF] Executed action ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI) in 33.363ms
+2025-09-15 08:42:35.013 +05:30 [INF] Executed endpoint 'ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI)'
+2025-09-15 08:42:35.015 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Mon, 15 Sep 2025 03:12:34 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+My-Key-From-Global: [Redacted]
+2025-09-15 08:42:35.018 +05:30 [INF] HTTP GET /Account/Login responded 200 in 50.8821 ms
+2025-09-15 08:42:35.021 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/Account/Login?ReturnUrl=%2F - - - 200 - text/html;+charset=utf-8 59.6948ms
+2025-09-15 08:42:35.035 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/favicon.ico - -
+2025-09-15 08:42:35.037 +05:30 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /favicon.ico
+2025-09-15 08:42:35.057 +05:30 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\HarshaGlobal\DadassahebParctice\ContactManagerSolution\ContactManager.UI\wwwroot\favicon.ico'
+2025-09-15 08:42:35.059 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: image/x-icon
+Date: Mon, 15 Sep 2025 03:12:34 GMT
+Server: Kestrel
+Accept-Ranges: bytes
+ETag: [Redacted]
+Last-Modified: Tue, 09 Sep 2025 14:49:19 GMT
+Content-Length: 5430
+2025-09-15 08:42:35.060 +05:30 [INF] HTTP GET /favicon.ico responded 200 in 23.8427 ms
+2025-09-15 08:42:35.063 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/favicon.ico - - - 200 5430 image/x-icon 28.3024ms
+2025-09-15 08:42:36.293 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/Account/Login?ReturnUrl=%2F - -
+2025-09-15 08:42:36.299 +05:30 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /Account/Login
+2025-09-15 08:42:36.301 +05:30 [INF] Executing endpoint 'ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI)'
+2025-09-15 08:42:36.305 +05:30 [INF] Route matched with {action = "Login", controller = "Account", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller ContactManager.UI.Controllers.AccountController (ContactManager.UI).
+2025-09-15 08:42:36.309 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-15 08:42:36.310 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-15 08:42:36.312 +05:30 [INF] Executing ViewResult, running view Login.
+2025-09-15 08:42:36.316 +05:30 [INF] Executed ViewResult - view Login executed in 4.2816ms.
+2025-09-15 08:42:36.320 +05:30 [INF] Executed action ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI) in 11.4874ms
+2025-09-15 08:42:36.323 +05:30 [INF] Executed endpoint 'ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI)'
+2025-09-15 08:42:36.324 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Mon, 15 Sep 2025 03:12:35 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+My-Key-From-Global: [Redacted]
+2025-09-15 08:42:36.325 +05:30 [INF] HTTP GET /Account/Login responded 200 in 26.9302 ms
+2025-09-15 08:42:36.328 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/Account/Login?ReturnUrl=%2F - - - 200 - text/html;+charset=utf-8 35.6491ms
+2025-09-15 08:42:37.364 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/Account/Login?ReturnUrl=%2F - -
+2025-09-15 08:42:37.371 +05:30 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /Account/Login
+2025-09-15 08:42:37.373 +05:30 [INF] Executing endpoint 'ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI)'
+2025-09-15 08:42:37.376 +05:30 [INF] Route matched with {action = "Login", controller = "Account", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller ContactManager.UI.Controllers.AccountController (ContactManager.UI).
+2025-09-15 08:42:37.380 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-15 08:42:37.381 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-15 08:42:37.383 +05:30 [INF] Executing ViewResult, running view Login.
+2025-09-15 08:42:37.387 +05:30 [INF] Executed ViewResult - view Login executed in 3.586ms.
+2025-09-15 08:42:37.390 +05:30 [INF] Executed action ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI) in 10.4628ms
+2025-09-15 08:42:37.391 +05:30 [INF] Executed endpoint 'ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI)'
+2025-09-15 08:42:37.393 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Mon, 15 Sep 2025 03:12:36 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+My-Key-From-Global: [Redacted]
+2025-09-15 08:42:37.394 +05:30 [INF] HTTP GET /Account/Login responded 200 in 23.0049 ms
+2025-09-15 08:42:37.397 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/Account/Login?ReturnUrl=%2F - - - 200 - text/html;+charset=utf-8 32.4400ms
+2025-09-15 08:42:38.040 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/Account/Login?ReturnUrl=%2F - -
+2025-09-15 08:42:38.046 +05:30 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /Account/Login
+2025-09-15 08:42:38.049 +05:30 [INF] Executing endpoint 'ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI)'
+2025-09-15 08:42:38.053 +05:30 [INF] Route matched with {action = "Login", controller = "Account", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller ContactManager.UI.Controllers.AccountController (ContactManager.UI).
+2025-09-15 08:42:38.057 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-15 08:42:38.059 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-15 08:42:38.061 +05:30 [INF] Executing ViewResult, running view Login.
+2025-09-15 08:42:38.064 +05:30 [INF] Executed ViewResult - view Login executed in 3.1385ms.
+2025-09-15 08:42:38.067 +05:30 [INF] Executed action ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI) in 10.4077ms
+2025-09-15 08:42:38.071 +05:30 [INF] Executed endpoint 'ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI)'
+2025-09-15 08:42:38.073 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Mon, 15 Sep 2025 03:12:37 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+My-Key-From-Global: [Redacted]
+2025-09-15 08:42:38.075 +05:30 [INF] HTTP GET /Account/Login responded 200 in 28.9504 ms
+2025-09-15 08:42:38.078 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/Account/Login?ReturnUrl=%2F - - - 200 - text/html;+charset=utf-8 38.8280ms
+2025-09-15 08:42:38.609 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/Account/Login?ReturnUrl=%2F - -
+2025-09-15 08:42:38.616 +05:30 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /Account/Login
+2025-09-15 08:42:38.619 +05:30 [INF] Executing endpoint 'ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI)'
+2025-09-15 08:42:38.622 +05:30 [INF] Route matched with {action = "Login", controller = "Account", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller ContactManager.UI.Controllers.AccountController (ContactManager.UI).
+2025-09-15 08:42:38.628 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-15 08:42:38.630 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-15 08:42:38.632 +05:30 [INF] Executing ViewResult, running view Login.
+2025-09-15 08:42:38.637 +05:30 [INF] Executed ViewResult - view Login executed in 4.8757ms.
+2025-09-15 08:42:38.640 +05:30 [INF] Executed action ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI) in 12.6739ms
+2025-09-15 08:42:38.643 +05:30 [INF] Executed endpoint 'ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI)'
+2025-09-15 08:42:38.645 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Mon, 15 Sep 2025 03:12:37 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+My-Key-From-Global: [Redacted]
+2025-09-15 08:42:38.646 +05:30 [INF] HTTP GET /Account/Login responded 200 in 30.4213 ms
+2025-09-15 08:42:38.651 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/Account/Login?ReturnUrl=%2F - - - 200 - text/html;+charset=utf-8 42.5507ms
+2025-09-15 08:42:39.183 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/Account/Login?ReturnUrl=%2F - -
+2025-09-15 08:42:39.191 +05:30 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /Account/Login
+2025-09-15 08:42:39.195 +05:30 [INF] Executing endpoint 'ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI)'
+2025-09-15 08:42:39.199 +05:30 [INF] Route matched with {action = "Login", controller = "Account", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller ContactManager.UI.Controllers.AccountController (ContactManager.UI).
+2025-09-15 08:42:39.205 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-15 08:42:39.207 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-15 08:42:39.209 +05:30 [INF] Executing ViewResult, running view Login.
+2025-09-15 08:42:39.212 +05:30 [INF] Executed ViewResult - view Login executed in 3.3168ms.
+2025-09-15 08:42:39.217 +05:30 [INF] Executed action ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI) in 11.6862ms
+2025-09-15 08:42:39.220 +05:30 [INF] Executed endpoint 'ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI)'
+2025-09-15 08:42:39.222 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Mon, 15 Sep 2025 03:12:39 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+My-Key-From-Global: [Redacted]
+2025-09-15 08:42:39.223 +05:30 [INF] HTTP GET /Account/Login responded 200 in 32.4864 ms
+2025-09-15 08:42:39.226 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/Account/Login?ReturnUrl=%2F - - - 200 - text/html;+charset=utf-8 43.3304ms
+2025-09-15 08:42:39.704 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/Account/Login?ReturnUrl=%2F - -
+2025-09-15 08:42:39.712 +05:30 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /Account/Login
+2025-09-15 08:42:39.715 +05:30 [INF] Executing endpoint 'ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI)'
+2025-09-15 08:42:39.720 +05:30 [INF] Route matched with {action = "Login", controller = "Account", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller ContactManager.UI.Controllers.AccountController (ContactManager.UI).
+2025-09-15 08:42:39.726 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-15 08:42:39.729 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-15 08:42:39.732 +05:30 [INF] Executing ViewResult, running view Login.
+2025-09-15 08:42:39.737 +05:30 [INF] Executed ViewResult - view Login executed in 5.0428ms.
+2025-09-15 08:42:39.740 +05:30 [INF] Executed action ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI) in 13.874ms
+2025-09-15 08:42:39.743 +05:30 [INF] Executed endpoint 'ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI)'
+2025-09-15 08:42:39.745 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Mon, 15 Sep 2025 03:12:39 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+My-Key-From-Global: [Redacted]
+2025-09-15 08:42:39.746 +05:30 [INF] HTTP GET /Account/Login responded 200 in 34.9487 ms
+2025-09-15 08:42:39.751 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/Account/Login?ReturnUrl=%2F - - - 200 - text/html;+charset=utf-8 47.1699ms
+2025-09-15 08:42:40.167 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/Account/Login?ReturnUrl=%2F - -
+2025-09-15 08:42:40.175 +05:30 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /Account/Login
+2025-09-15 08:42:40.179 +05:30 [INF] Executing endpoint 'ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI)'
+2025-09-15 08:42:40.183 +05:30 [INF] Route matched with {action = "Login", controller = "Account", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller ContactManager.UI.Controllers.AccountController (ContactManager.UI).
+2025-09-15 08:42:40.192 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-15 08:42:40.196 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-15 08:42:40.199 +05:30 [INF] Executing ViewResult, running view Login.
+2025-09-15 08:42:40.205 +05:30 [INF] Executed ViewResult - view Login executed in 5.633ms.
+2025-09-15 08:42:40.209 +05:30 [INF] Executed action ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI) in 17.0989ms
+2025-09-15 08:42:40.212 +05:30 [INF] Executed endpoint 'ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI)'
+2025-09-15 08:42:40.215 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Mon, 15 Sep 2025 03:12:40 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+My-Key-From-Global: [Redacted]
+2025-09-15 08:42:40.217 +05:30 [INF] HTTP GET /Account/Login responded 200 in 42.7451 ms
+2025-09-15 08:42:40.223 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/Account/Login?ReturnUrl=%2F - - - 200 - text/html;+charset=utf-8 56.3042ms
+2025-09-15 08:42:40.702 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/Account/Login?ReturnUrl=%2F - -
+2025-09-15 08:42:40.709 +05:30 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /Account/Login
+2025-09-15 08:42:40.712 +05:30 [INF] Executing endpoint 'ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI)'
+2025-09-15 08:42:40.715 +05:30 [INF] Route matched with {action = "Login", controller = "Account", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller ContactManager.UI.Controllers.AccountController (ContactManager.UI).
+2025-09-15 08:42:40.721 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-15 08:42:40.723 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-15 08:42:40.725 +05:30 [INF] Executing ViewResult, running view Login.
+2025-09-15 08:42:40.727 +05:30 [INF] Executed ViewResult - view Login executed in 2.5801ms.
+2025-09-15 08:42:40.730 +05:30 [INF] Executed action ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI) in 9.0654ms
+2025-09-15 08:42:40.733 +05:30 [INF] Executed endpoint 'ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI)'
+2025-09-15 08:42:40.738 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Mon, 15 Sep 2025 03:12:40 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+My-Key-From-Global: [Redacted]
+2025-09-15 08:42:40.740 +05:30 [INF] HTTP GET /Account/Login responded 200 in 31.0855 ms
+2025-09-15 08:42:40.743 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/Account/Login?ReturnUrl=%2F - - - 200 - text/html;+charset=utf-8 40.6760ms
+2025-09-15 08:42:41.147 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/Account/Login?ReturnUrl=%2F - -
+2025-09-15 08:42:41.154 +05:30 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /Account/Login
+2025-09-15 08:42:41.156 +05:30 [INF] Executing endpoint 'ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI)'
+2025-09-15 08:42:41.159 +05:30 [INF] Route matched with {action = "Login", controller = "Account", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller ContactManager.UI.Controllers.AccountController (ContactManager.UI).
+2025-09-15 08:42:41.164 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-15 08:42:41.167 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-15 08:42:41.169 +05:30 [INF] Executing ViewResult, running view Login.
+2025-09-15 08:42:41.173 +05:30 [INF] Executed ViewResult - view Login executed in 4.1395ms.
+2025-09-15 08:42:41.177 +05:30 [INF] Executed action ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI) in 13.127ms
+2025-09-15 08:42:41.180 +05:30 [INF] Executed endpoint 'ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI)'
+2025-09-15 08:42:41.183 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Mon, 15 Sep 2025 03:12:41 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+My-Key-From-Global: [Redacted]
+2025-09-15 08:42:41.185 +05:30 [INF] HTTP GET /Account/Login responded 200 in 31.6878 ms
+2025-09-15 08:42:41.190 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/Account/Login?ReturnUrl=%2F - - - 200 - text/html;+charset=utf-8 43.3935ms
+2025-09-15 08:42:41.697 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/Account/Login?ReturnUrl=%2F - -
+2025-09-15 08:42:41.705 +05:30 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /Account/Login
+2025-09-15 08:42:41.709 +05:30 [INF] Executing endpoint 'ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI)'
+2025-09-15 08:42:41.713 +05:30 [INF] Route matched with {action = "Login", controller = "Account", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller ContactManager.UI.Controllers.AccountController (ContactManager.UI).
+2025-09-15 08:42:41.722 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-15 08:42:41.725 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-15 08:42:41.729 +05:30 [INF] Executing ViewResult, running view Login.
+2025-09-15 08:42:41.737 +05:30 [INF] Executed ViewResult - view Login executed in 7.9187ms.
+2025-09-15 08:42:41.743 +05:30 [INF] Executed action ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI) in 21.5289ms
+2025-09-15 08:42:41.749 +05:30 [INF] Executed endpoint 'ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI)'
+2025-09-15 08:42:41.754 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Mon, 15 Sep 2025 03:12:41 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+My-Key-From-Global: [Redacted]
+2025-09-15 08:42:41.758 +05:30 [INF] HTTP GET /Account/Login responded 200 in 52.7758 ms
+2025-09-15 08:42:41.766 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/Account/Login?ReturnUrl=%2F - - - 200 - text/html;+charset=utf-8 68.8050ms
+2025-09-15 08:42:42.237 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/Account/Login?ReturnUrl=%2F - -
+2025-09-15 08:42:42.244 +05:30 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /Account/Login
+2025-09-15 08:42:42.247 +05:30 [INF] Executing endpoint 'ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI)'
+2025-09-15 08:42:42.251 +05:30 [INF] Route matched with {action = "Login", controller = "Account", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller ContactManager.UI.Controllers.AccountController (ContactManager.UI).
+2025-09-15 08:42:42.256 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-15 08:42:42.257 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-15 08:42:42.259 +05:30 [INF] Executing ViewResult, running view Login.
+2025-09-15 08:42:42.262 +05:30 [INF] Executed ViewResult - view Login executed in 2.8005ms.
+2025-09-15 08:42:42.265 +05:30 [INF] Executed action ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI) in 10.0911ms
+2025-09-15 08:42:42.270 +05:30 [INF] Executed endpoint 'ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI)'
+2025-09-15 08:42:42.273 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Mon, 15 Sep 2025 03:12:42 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+My-Key-From-Global: [Redacted]
+2025-09-15 08:42:42.275 +05:30 [INF] HTTP GET /Account/Login responded 200 in 31.4094 ms
+2025-09-15 08:42:42.277 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/Account/Login?ReturnUrl=%2F - - - 200 - text/html;+charset=utf-8 41.0398ms
+2025-09-15 08:42:43.357 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/Account/Login?ReturnUrl=%2F - -
+2025-09-15 08:42:43.363 +05:30 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /Account/Login
+2025-09-15 08:42:43.365 +05:30 [INF] Executing endpoint 'ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI)'
+2025-09-15 08:42:43.368 +05:30 [INF] Route matched with {action = "Login", controller = "Account", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller ContactManager.UI.Controllers.AccountController (ContactManager.UI).
+2025-09-15 08:42:43.372 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-15 08:42:43.374 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-15 08:42:43.375 +05:30 [INF] Executing ViewResult, running view Login.
+2025-09-15 08:42:43.378 +05:30 [INF] Executed ViewResult - view Login executed in 2.6749ms.
+2025-09-15 08:42:43.380 +05:30 [INF] Executed action ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI) in 8.1856ms
+2025-09-15 08:42:43.384 +05:30 [INF] Executed endpoint 'ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI)'
+2025-09-15 08:42:43.387 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Mon, 15 Sep 2025 03:12:43 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+My-Key-From-Global: [Redacted]
+2025-09-15 08:42:43.388 +05:30 [INF] HTTP GET /Account/Login responded 200 in 25.8558 ms
+2025-09-15 08:42:43.392 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/Account/Login?ReturnUrl=%2F - - - 200 - text/html;+charset=utf-8 35.0628ms
+2025-09-15 08:42:44.635 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/Account/Login?ReturnUrl=%2F - -
+2025-09-15 08:42:44.642 +05:30 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /Account/Login
+2025-09-15 08:42:44.644 +05:30 [INF] Executing endpoint 'ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI)'
+2025-09-15 08:42:44.646 +05:30 [INF] Route matched with {action = "Login", controller = "Account", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller ContactManager.UI.Controllers.AccountController (ContactManager.UI).
+2025-09-15 08:42:44.651 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-15 08:42:44.653 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-15 08:42:44.654 +05:30 [INF] Executing ViewResult, running view Login.
+2025-09-15 08:42:44.657 +05:30 [INF] Executed ViewResult - view Login executed in 2.5759ms.
+2025-09-15 08:42:44.659 +05:30 [INF] Executed action ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI) in 8.888ms
+2025-09-15 08:42:44.662 +05:30 [INF] Executed endpoint 'ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI)'
+2025-09-15 08:42:44.663 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Mon, 15 Sep 2025 03:12:44 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+My-Key-From-Global: [Redacted]
+2025-09-15 08:42:44.665 +05:30 [INF] HTTP GET /Account/Login responded 200 in 23.6027 ms
+2025-09-15 08:42:44.669 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/Account/Login?ReturnUrl=%2F - - - 200 - text/html;+charset=utf-8 34.0824ms
+2025-09-15 08:42:45.537 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/Account/Login?ReturnUrl=%2F - -
+2025-09-15 08:42:45.543 +05:30 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /Account/Login
+2025-09-15 08:42:45.545 +05:30 [INF] Executing endpoint 'ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI)'
+2025-09-15 08:42:45.547 +05:30 [INF] Route matched with {action = "Login", controller = "Account", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller ContactManager.UI.Controllers.AccountController (ContactManager.UI).
+2025-09-15 08:42:45.551 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-15 08:42:45.553 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-15 08:42:45.555 +05:30 [INF] Executing ViewResult, running view Login.
+2025-09-15 08:42:45.558 +05:30 [INF] Executed ViewResult - view Login executed in 2.988ms.
+2025-09-15 08:42:45.561 +05:30 [INF] Executed action ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI) in 10.0216ms
+2025-09-15 08:42:45.564 +05:30 [INF] Executed endpoint 'ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI)'
+2025-09-15 08:42:45.566 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Mon, 15 Sep 2025 03:12:45 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+My-Key-From-Global: [Redacted]
+2025-09-15 08:42:45.568 +05:30 [INF] HTTP GET /Account/Login responded 200 in 25.6711 ms
+2025-09-15 08:42:45.572 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/Account/Login?ReturnUrl=%2F - - - 200 - text/html;+charset=utf-8 35.3121ms
+2025-09-15 08:43:51.255 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/.well-known/appspecific/com.chrome.devtools.json - -
+2025-09-15 08:43:51.257 +05:30 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /.well-known/appspecific/com.chrome.devtools.json
+2025-09-15 08:43:51.262 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-09-15 08:43:51.264 +05:30 [INF] AuthenticationScheme: Identity.Application was challenged.
+2025-09-15 08:43:51.267 +05:30 [INF] Response:
+StatusCode: 302
+Location: https://localhost:5076/Account/Login?ReturnUrl=%2F.well-known%2Fappspecific%2Fcom.chrome.devtools.json
+2025-09-15 08:43:51.268 +05:30 [INF] HTTP GET /.well-known/appspecific/com.chrome.devtools.json responded 302 in 11.1756 ms
+2025-09-15 08:43:51.272 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/.well-known/appspecific/com.chrome.devtools.json - - - 302 0 - 16.4257ms
+2025-09-15 08:43:51.308 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/Account/Login?ReturnUrl=%2F.well-known%2Fappspecific%2Fcom.chrome.devtools.json - -
+2025-09-15 08:43:51.309 +05:30 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /Account/Login
+2025-09-15 08:43:51.311 +05:30 [INF] Executing endpoint 'ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI)'
+2025-09-15 08:43:51.313 +05:30 [INF] Route matched with {action = "Login", controller = "Account", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller ContactManager.UI.Controllers.AccountController (ContactManager.UI).
+2025-09-15 08:43:51.316 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-15 08:43:51.318 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-15 08:43:51.320 +05:30 [INF] Executing ViewResult, running view Login.
+2025-09-15 08:43:51.323 +05:30 [INF] Executed ViewResult - view Login executed in 3.9044ms.
+2025-09-15 08:43:51.325 +05:30 [INF] Executed action ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI) in 9.3318ms
+2025-09-15 08:43:51.328 +05:30 [INF] Executed endpoint 'ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI)'
+2025-09-15 08:43:51.329 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Mon, 15 Sep 2025 03:13:50 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+My-Key-From-Global: [Redacted]
+2025-09-15 08:43:51.331 +05:30 [INF] HTTP GET /Account/Login responded 200 in 21.8050 ms
+2025-09-15 08:43:51.334 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/Account/Login?ReturnUrl=%2F.well-known%2Fappspecific%2Fcom.chrome.devtools.json - - - 200 - text/html;+charset=utf-8 26.2870ms
+2025-09-15 08:44:01.192 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/Account/Login?ReturnUrl=%2F - -
+2025-09-15 08:44:01.202 +05:30 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /Account/Login
+2025-09-15 08:44:01.204 +05:30 [INF] Executing endpoint 'ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI)'
+2025-09-15 08:44:01.206 +05:30 [INF] Route matched with {action = "Login", controller = "Account", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller ContactManager.UI.Controllers.AccountController (ContactManager.UI).
+2025-09-15 08:44:01.210 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-15 08:44:01.211 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-15 08:44:01.213 +05:30 [INF] Executing ViewResult, running view Login.
+2025-09-15 08:44:01.219 +05:30 [INF] Executed ViewResult - view Login executed in 6.5723ms.
+2025-09-15 08:44:01.223 +05:30 [INF] Executed action ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI) in 13.1181ms
+2025-09-15 08:44:01.226 +05:30 [INF] Executed endpoint 'ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI)'
+2025-09-15 08:44:01.228 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Mon, 15 Sep 2025 03:14:00 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+Set-Cookie: [Redacted]
+My-Key-From-Global: [Redacted]
+X-Frame-Options: [Redacted]
+2025-09-15 08:44:01.230 +05:30 [INF] HTTP GET /Account/Login responded 200 in 27.5953 ms
+2025-09-15 08:44:01.235 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/Account/Login?ReturnUrl=%2F - - - 200 - text/html;+charset=utf-8 42.0202ms
+2025-09-15 08:44:01.255 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/Stylesheet.css - -
+2025-09-15 08:44:01.256 +05:30 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /Stylesheet.css
+2025-09-15 08:44:01.266 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/_framework/aspnetcore-browser-refresh.js - -
+2025-09-15 08:44:01.267 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/_vs/browserLink - -
+2025-09-15 08:44:01.273 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/_framework/aspnetcore-browser-refresh.js - - - 200 12366 application/javascript;+charset=utf-8 7.2241ms
+2025-09-15 08:44:01.277 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/.well-known/appspecific/com.chrome.devtools.json - -
+2025-09-15 08:44:01.267 +05:30 [INF] Sending file. Request path: '/Stylesheet.css'. Physical path: 'C:\HarshaGlobal\DadassahebParctice\ContactManagerSolution\ContactManager.UI\wwwroot\StyleSheet.css'
+2025-09-15 08:44:01.285 +05:30 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /.well-known/appspecific/com.chrome.devtools.json
+2025-09-15 08:44:01.288 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: text/css
+Date: Mon, 15 Sep 2025 03:14:00 GMT
+Server: Kestrel
+Accept-Ranges: bytes
+ETag: [Redacted]
+Last-Modified: Thu, 26 Jun 2025 15:31:58 GMT
+Content-Length: 10279
+2025-09-15 08:44:01.288 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 21.4060ms
+2025-09-15 08:44:01.290 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-09-15 08:44:01.292 +05:30 [INF] HTTP GET /Stylesheet.css responded 200 in 35.3832 ms
+2025-09-15 08:44:01.295 +05:30 [INF] AuthenticationScheme: Identity.Application was challenged.
+2025-09-15 08:44:01.309 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/Stylesheet.css - - - 200 10279 text/css 53.8441ms
+2025-09-15 08:44:01.310 +05:30 [INF] Response:
+StatusCode: 302
+Location: https://localhost:5076/Account/Login?ReturnUrl=%2F.well-known%2Fappspecific%2Fcom.chrome.devtools.json
+2025-09-15 08:44:01.313 +05:30 [INF] HTTP GET /.well-known/appspecific/com.chrome.devtools.json responded 302 in 27.0626 ms
+2025-09-15 08:44:01.319 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/.well-known/appspecific/com.chrome.devtools.json - - - 302 0 - 41.6157ms
+2025-09-15 08:44:01.322 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/Account/Login?ReturnUrl=%2F.well-known%2Fappspecific%2Fcom.chrome.devtools.json - -
+2025-09-15 08:44:01.324 +05:30 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /Account/Login
+2025-09-15 08:44:01.326 +05:30 [INF] Executing endpoint 'ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI)'
+2025-09-15 08:44:01.334 +05:30 [INF] Route matched with {action = "Login", controller = "Account", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller ContactManager.UI.Controllers.AccountController (ContactManager.UI).
+2025-09-15 08:44:01.340 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-15 08:44:01.342 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-15 08:44:01.344 +05:30 [INF] Executing ViewResult, running view Login.
+2025-09-15 08:44:01.350 +05:30 [INF] Executed ViewResult - view Login executed in 5.5628ms.
+2025-09-15 08:44:01.353 +05:30 [INF] Executed action ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI) in 12.9197ms
+2025-09-15 08:44:01.355 +05:30 [INF] Executed endpoint 'ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI)'
+2025-09-15 08:44:01.357 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Mon, 15 Sep 2025 03:14:00 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+My-Key-From-Global: [Redacted]
+2025-09-15 08:44:01.359 +05:30 [INF] HTTP GET /Account/Login responded 200 in 34.5163 ms
+2025-09-15 08:44:01.362 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/jquery.validate.unobtrusive.min.js - -
+2025-09-15 08:44:01.417 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/Account/Login?ReturnUrl=%2F.well-known%2Fappspecific%2Fcom.chrome.devtools.json - - - 200 - text/html;+charset=utf-8 96.0961ms
+2025-09-15 08:44:01.419 +05:30 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /jquery.validate.unobtrusive.min.js
+2025-09-15 08:44:01.425 +05:30 [INF] Sending file. Request path: '/jquery.validate.unobtrusive.min.js'. Physical path: 'C:\HarshaGlobal\DadassahebParctice\ContactManagerSolution\ContactManager.UI\wwwroot\jquery.validate.unobtrusive.min.js'
+2025-09-15 08:44:01.427 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/javascript
+Date: Mon, 15 Sep 2025 03:14:00 GMT
+Server: Kestrel
+Accept-Ranges: bytes
+ETag: [Redacted]
+Last-Modified: Thu, 26 Jun 2025 15:31:58 GMT
+Content-Length: 5867
+2025-09-15 08:44:01.430 +05:30 [INF] HTTP GET /jquery.validate.unobtrusive.min.js responded 200 in 10.5289 ms
+2025-09-15 08:44:01.433 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/jquery.validate.unobtrusive.min.js - - - 200 5867 application/javascript 71.6709ms
+2025-09-15 08:44:01.490 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/favicon.ico - -
+2025-09-15 08:44:01.492 +05:30 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /favicon.ico
+2025-09-15 08:44:01.497 +05:30 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\HarshaGlobal\DadassahebParctice\ContactManagerSolution\ContactManager.UI\wwwroot\favicon.ico'
+2025-09-15 08:44:01.499 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: image/x-icon
+Date: Mon, 15 Sep 2025 03:14:00 GMT
+Server: Kestrel
+Accept-Ranges: bytes
+ETag: [Redacted]
+Last-Modified: Tue, 09 Sep 2025 14:49:19 GMT
+Content-Length: 5430
+2025-09-15 08:44:01.501 +05:30 [INF] HTTP GET /favicon.ico responded 200 in 9.4501 ms
+2025-09-15 08:44:01.504 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/favicon.ico - - - 200 5430 image/x-icon 14.0209ms
+2025-09-15 08:46:40.238 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/Account/Login?ReturnUrl=%2F - -
+2025-09-15 08:46:40.259 +05:30 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /Account/Login
+2025-09-15 08:46:40.262 +05:30 [INF] Executing endpoint 'ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI)'
+2025-09-15 08:46:40.264 +05:30 [INF] Route matched with {action = "Login", controller = "Account", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller ContactManager.UI.Controllers.AccountController (ContactManager.UI).
+2025-09-15 08:46:40.271 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-15 08:46:40.273 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-15 08:46:40.275 +05:30 [INF] Executing ViewResult, running view Login.
+2025-09-15 08:46:40.280 +05:30 [INF] Executed ViewResult - view Login executed in 4.9169ms.
+2025-09-15 08:46:40.290 +05:30 [INF] Executed action ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI) in 19.6124ms
+2025-09-15 08:46:40.294 +05:30 [INF] Executed endpoint 'ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI)'
+2025-09-15 08:46:40.295 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Mon, 15 Sep 2025 03:16:40 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+My-Key-From-Global: [Redacted]
+2025-09-15 08:46:40.297 +05:30 [INF] HTTP GET /Account/Login responded 200 in 37.8012 ms
+2025-09-15 08:46:40.300 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/Account/Login?ReturnUrl=%2F - - - 200 - text/html;+charset=utf-8 61.6613ms
+2025-09-15 08:46:40.312 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/Stylesheet.css - -
+2025-09-15 08:46:40.314 +05:30 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /Stylesheet.css
+2025-09-15 08:46:40.321 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/_framework/aspnetcore-browser-refresh.js - -
+2025-09-15 08:46:40.323 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/_vs/browserLink - -
+2025-09-15 08:46:40.325 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/_framework/aspnetcore-browser-refresh.js - - - 200 12366 application/javascript;+charset=utf-8 4.0998ms
+2025-09-15 08:46:40.323 +05:30 [INF] Sending file. Request path: '/Stylesheet.css'. Physical path: 'C:\HarshaGlobal\DadassahebParctice\ContactManagerSolution\ContactManager.UI\wwwroot\StyleSheet.css'
+2025-09-15 08:46:40.345 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/.well-known/appspecific/com.chrome.devtools.json - -
+2025-09-15 08:46:40.348 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 25.2089ms
+2025-09-15 08:46:40.348 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: text/css
+Date: Mon, 15 Sep 2025 03:16:40 GMT
+Server: Kestrel
+Accept-Ranges: bytes
+ETag: [Redacted]
+Last-Modified: Thu, 26 Jun 2025 15:31:58 GMT
+Content-Length: 10279
+2025-09-15 08:46:40.350 +05:30 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /.well-known/appspecific/com.chrome.devtools.json
+2025-09-15 08:46:40.353 +05:30 [INF] HTTP GET /Stylesheet.css responded 200 in 39.5074 ms
+2025-09-15 08:46:40.354 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-09-15 08:46:40.357 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/Stylesheet.css - - - 200 10279 text/css 45.0523ms
+2025-09-15 08:46:40.358 +05:30 [INF] AuthenticationScheme: Identity.Application was challenged.
+2025-09-15 08:46:40.361 +05:30 [INF] Response:
+StatusCode: 302
+Location: https://localhost:5076/Account/Login?ReturnUrl=%2F.well-known%2Fappspecific%2Fcom.chrome.devtools.json
+2025-09-15 08:46:40.362 +05:30 [INF] HTTP GET /.well-known/appspecific/com.chrome.devtools.json responded 302 in 11.6113 ms
+2025-09-15 08:46:40.365 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/.well-known/appspecific/com.chrome.devtools.json - - - 302 0 - 20.5038ms
+2025-09-15 08:46:40.369 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/Account/Login?ReturnUrl=%2F.well-known%2Fappspecific%2Fcom.chrome.devtools.json - -
+2025-09-15 08:46:40.370 +05:30 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /Account/Login
+2025-09-15 08:46:40.372 +05:30 [INF] Executing endpoint 'ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI)'
+2025-09-15 08:46:40.373 +05:30 [INF] Route matched with {action = "Login", controller = "Account", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller ContactManager.UI.Controllers.AccountController (ContactManager.UI).
+2025-09-15 08:46:40.378 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-15 08:46:40.380 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-15 08:46:40.386 +05:30 [INF] Executing ViewResult, running view Login.
+2025-09-15 08:46:40.390 +05:30 [INF] Executed ViewResult - view Login executed in 4.9339ms.
+2025-09-15 08:46:40.393 +05:30 [INF] Executed action ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI) in 15.3806ms
+2025-09-15 08:46:40.395 +05:30 [INF] Executed endpoint 'ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI)'
+2025-09-15 08:46:40.398 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Mon, 15 Sep 2025 03:16:40 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+My-Key-From-Global: [Redacted]
+2025-09-15 08:46:40.402 +05:30 [INF] HTTP GET /Account/Login responded 200 in 31.8338 ms
+2025-09-15 08:46:40.406 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/Account/Login?ReturnUrl=%2F.well-known%2Fappspecific%2Fcom.chrome.devtools.json - - - 200 - text/html;+charset=utf-8 36.9923ms
+2025-09-15 08:46:40.431 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/jquery.validate.unobtrusive.min.js - -
+2025-09-15 08:46:40.434 +05:30 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /jquery.validate.unobtrusive.min.js
+2025-09-15 08:46:40.440 +05:30 [INF] Sending file. Request path: '/jquery.validate.unobtrusive.min.js'. Physical path: 'C:\HarshaGlobal\DadassahebParctice\ContactManagerSolution\ContactManager.UI\wwwroot\jquery.validate.unobtrusive.min.js'
+2025-09-15 08:46:40.442 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/javascript
+Date: Mon, 15 Sep 2025 03:16:40 GMT
+Server: Kestrel
+Accept-Ranges: bytes
+ETag: [Redacted]
+Last-Modified: Thu, 26 Jun 2025 15:31:58 GMT
+Content-Length: 5867
+2025-09-15 08:46:40.443 +05:30 [INF] HTTP GET /jquery.validate.unobtrusive.min.js responded 200 in 9.2565 ms
+2025-09-15 08:46:40.446 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/jquery.validate.unobtrusive.min.js - - - 200 5867 application/javascript 15.1996ms
+2025-09-15 08:46:40.488 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/favicon.ico - -
+2025-09-15 08:46:40.489 +05:30 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /favicon.ico
+2025-09-15 08:46:40.494 +05:30 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\HarshaGlobal\DadassahebParctice\ContactManagerSolution\ContactManager.UI\wwwroot\favicon.ico'
+2025-09-15 08:46:40.496 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: image/x-icon
+Date: Mon, 15 Sep 2025 03:16:40 GMT
+Server: Kestrel
+Accept-Ranges: bytes
+ETag: [Redacted]
+Last-Modified: Tue, 09 Sep 2025 14:49:19 GMT
+Content-Length: 5430
+2025-09-15 08:46:40.498 +05:30 [INF] HTTP GET /favicon.ico responded 200 in 8.7213 ms
+2025-09-15 08:46:40.505 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/favicon.ico - - - 200 5430 image/x-icon 17.5389ms
+2025-09-15 08:47:31.635 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/Account/Login?ReturnUrl=%2F - -
+2025-09-15 08:47:31.647 +05:30 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /Account/Login
+2025-09-15 08:47:31.649 +05:30 [INF] Executing endpoint 'ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI)'
+2025-09-15 08:47:31.652 +05:30 [INF] Route matched with {action = "Login", controller = "Account", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller ContactManager.UI.Controllers.AccountController (ContactManager.UI).
+2025-09-15 08:47:31.658 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-15 08:47:31.660 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-15 08:47:31.662 +05:30 [INF] Executing ViewResult, running view Login.
+2025-09-15 08:47:31.666 +05:30 [INF] Executed ViewResult - view Login executed in 4.5197ms.
+2025-09-15 08:47:31.672 +05:30 [INF] Executed action ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI) in 14.0422ms
+2025-09-15 08:47:31.675 +05:30 [INF] Executed endpoint 'ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI)'
+2025-09-15 08:47:31.677 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Mon, 15 Sep 2025 03:17:31 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+My-Key-From-Global: [Redacted]
+2025-09-15 08:47:31.679 +05:30 [INF] HTTP GET /Account/Login responded 200 in 32.1838 ms
+2025-09-15 08:47:31.682 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/Account/Login?ReturnUrl=%2F - - - 200 - text/html;+charset=utf-8 47.3441ms
+2025-09-15 08:47:44.412 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/Account/Login?ReturnUrl=%2F - -
+2025-09-15 08:47:44.418 +05:30 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /Account/Login
+2025-09-15 08:47:44.421 +05:30 [INF] Executing endpoint 'ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI)'
+2025-09-15 08:47:44.423 +05:30 [INF] Route matched with {action = "Login", controller = "Account", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller ContactManager.UI.Controllers.AccountController (ContactManager.UI).
+2025-09-15 08:47:44.429 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-15 08:47:44.431 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-15 08:47:44.432 +05:30 [INF] Executing ViewResult, running view Login.
+2025-09-15 08:47:44.437 +05:30 [INF] Executed ViewResult - view Login executed in 4.878ms.
+2025-09-15 08:47:44.441 +05:30 [INF] Executed action ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI) in 13.0561ms
+2025-09-15 08:47:44.444 +05:30 [INF] Executed endpoint 'ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI)'
+2025-09-15 08:47:44.445 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Mon, 15 Sep 2025 03:17:43 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+My-Key-From-Global: [Redacted]
+2025-09-15 08:47:44.447 +05:30 [INF] HTTP GET /Account/Login responded 200 in 28.7147 ms
+2025-09-15 08:47:44.450 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/Account/Login?ReturnUrl=%2F - - - 200 - text/html;+charset=utf-8 38.0878ms
+2025-09-15 08:47:49.654 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/Account/Login?ReturnUrl=%2F - -
+2025-09-15 08:47:49.659 +05:30 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /Account/Login
+2025-09-15 08:47:49.661 +05:30 [INF] Executing endpoint 'ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI)'
+2025-09-15 08:47:49.663 +05:30 [INF] Route matched with {action = "Login", controller = "Account", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller ContactManager.UI.Controllers.AccountController (ContactManager.UI).
+2025-09-15 08:47:49.666 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-15 08:47:49.667 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-15 08:47:49.669 +05:30 [INF] Executing ViewResult, running view Login.
+2025-09-15 08:47:49.673 +05:30 [INF] Executed ViewResult - view Login executed in 4.117ms.
+2025-09-15 08:47:49.676 +05:30 [INF] Executed action ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI) in 10.1854ms
+2025-09-15 08:47:49.679 +05:30 [INF] Executed endpoint 'ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI)'
+2025-09-15 08:47:49.681 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Mon, 15 Sep 2025 03:17:48 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+My-Key-From-Global: [Redacted]
+2025-09-15 08:47:49.683 +05:30 [INF] HTTP GET /Account/Login responded 200 in 24.3852 ms
+2025-09-15 08:47:49.687 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/Account/Login?ReturnUrl=%2F - - - 200 - text/html;+charset=utf-8 33.2041ms
+2025-09-15 08:47:49.704 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/Stylesheet.css - -
+2025-09-15 08:47:49.705 +05:30 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /Stylesheet.css
+2025-09-15 08:47:49.707 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/_vs/browserLink - -
+2025-09-15 08:47:49.707 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/_framework/aspnetcore-browser-refresh.js - -
+2025-09-15 08:47:49.710 +05:30 [INF] Sending file. Request path: '/Stylesheet.css'. Physical path: 'C:\HarshaGlobal\DadassahebParctice\ContactManagerSolution\ContactManager.UI\wwwroot\StyleSheet.css'
+2025-09-15 08:47:49.712 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/_framework/aspnetcore-browser-refresh.js - - - 200 12366 application/javascript;+charset=utf-8 5.3272ms
+2025-09-15 08:47:49.714 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: text/css
+Date: Mon, 15 Sep 2025 03:17:48 GMT
+Server: Kestrel
+Accept-Ranges: bytes
+ETag: [Redacted]
+Last-Modified: Thu, 26 Jun 2025 15:31:58 GMT
+Content-Length: 10279
+2025-09-15 08:47:49.721 +05:30 [INF] HTTP GET /Stylesheet.css responded 200 in 15.8246 ms
+2025-09-15 08:47:49.737 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/.well-known/appspecific/com.chrome.devtools.json - -
+2025-09-15 08:47:49.739 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/Stylesheet.css - - - 200 10279 text/css 35.2869ms
+2025-09-15 08:47:49.740 +05:30 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /.well-known/appspecific/com.chrome.devtools.json
+2025-09-15 08:47:49.744 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-09-15 08:47:49.751 +05:30 [INF] AuthenticationScheme: Identity.Application was challenged.
+2025-09-15 08:47:49.757 +05:30 [INF] Response:
+StatusCode: 302
+Location: https://localhost:5076/Account/Login?ReturnUrl=%2F.well-known%2Fappspecific%2Fcom.chrome.devtools.json
+2025-09-15 08:47:49.760 +05:30 [INF] HTTP GET /.well-known/appspecific/com.chrome.devtools.json responded 302 in 19.9988 ms
+2025-09-15 08:47:49.762 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 55.2975ms
+2025-09-15 08:47:49.774 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/.well-known/appspecific/com.chrome.devtools.json - - - 302 0 - 37.0066ms
+2025-09-15 08:47:49.781 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/Account/Login?ReturnUrl=%2F.well-known%2Fappspecific%2Fcom.chrome.devtools.json - -
+2025-09-15 08:47:49.787 +05:30 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /Account/Login
+2025-09-15 08:47:49.789 +05:30 [INF] Executing endpoint 'ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI)'
+2025-09-15 08:47:49.791 +05:30 [INF] Route matched with {action = "Login", controller = "Account", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller ContactManager.UI.Controllers.AccountController (ContactManager.UI).
+2025-09-15 08:47:49.795 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-15 08:47:49.798 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-15 08:47:49.807 +05:30 [INF] Executing ViewResult, running view Login.
+2025-09-15 08:47:49.818 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/jquery.validate.unobtrusive.min.js - -
+2025-09-15 08:47:49.828 +05:30 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /jquery.validate.unobtrusive.min.js
+2025-09-15 08:47:49.830 +05:30 [INF] Executed ViewResult - view Login executed in 23.5556ms.
+2025-09-15 08:47:49.842 +05:30 [INF] Sending file. Request path: '/jquery.validate.unobtrusive.min.js'. Physical path: 'C:\HarshaGlobal\DadassahebParctice\ContactManagerSolution\ContactManager.UI\wwwroot\jquery.validate.unobtrusive.min.js'
+2025-09-15 08:47:49.847 +05:30 [INF] Executed action ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI) in 52.5746ms
+2025-09-15 08:47:49.849 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/javascript
+Date: Mon, 15 Sep 2025 03:17:49 GMT
+Server: Kestrel
+Accept-Ranges: bytes
+ETag: [Redacted]
+Last-Modified: Thu, 26 Jun 2025 15:31:58 GMT
+Content-Length: 5867
+2025-09-15 08:47:49.853 +05:30 [INF] Executed endpoint 'ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI)'
+2025-09-15 08:47:49.855 +05:30 [INF] HTTP GET /jquery.validate.unobtrusive.min.js responded 200 in 26.1893 ms
+2025-09-15 08:47:49.856 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Mon, 15 Sep 2025 03:17:48 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+My-Key-From-Global: [Redacted]
+2025-09-15 08:47:49.859 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/jquery.validate.unobtrusive.min.js - - - 200 5867 application/javascript 41.1671ms
+2025-09-15 08:47:49.861 +05:30 [INF] HTTP GET /Account/Login responded 200 in 74.1731 ms
+2025-09-15 08:47:49.865 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/Account/Login?ReturnUrl=%2F.well-known%2Fappspecific%2Fcom.chrome.devtools.json - - - 200 - text/html;+charset=utf-8 84.5007ms
+2025-09-15 08:47:49.910 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/favicon.ico - -
+2025-09-15 08:47:49.913 +05:30 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /favicon.ico
+2025-09-15 08:47:49.924 +05:30 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\HarshaGlobal\DadassahebParctice\ContactManagerSolution\ContactManager.UI\wwwroot\favicon.ico'
+2025-09-15 08:47:49.926 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: image/x-icon
+Date: Mon, 15 Sep 2025 03:17:49 GMT
+Server: Kestrel
+Accept-Ranges: bytes
+ETag: [Redacted]
+Last-Modified: Tue, 09 Sep 2025 14:49:19 GMT
+Content-Length: 5430
+2025-09-15 08:47:49.928 +05:30 [INF] HTTP GET /favicon.ico responded 200 in 15.1001 ms
+2025-09-15 08:47:49.938 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/favicon.ico - - - 200 5430 image/x-icon 27.8577ms
+2025-09-15 08:48:34.430 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/Account/Login?ReturnUrl=%2F - -
+2025-09-15 08:48:34.435 +05:30 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /Account/Login
+2025-09-15 08:48:34.437 +05:30 [INF] Executing endpoint 'ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI)'
+2025-09-15 08:48:34.438 +05:30 [INF] Route matched with {action = "Login", controller = "Account", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller ContactManager.UI.Controllers.AccountController (ContactManager.UI).
+2025-09-15 08:48:34.442 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-15 08:48:34.443 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-15 08:48:34.444 +05:30 [INF] Executing ViewResult, running view Login.
+2025-09-15 08:48:34.448 +05:30 [INF] Executed ViewResult - view Login executed in 3.599ms.
+2025-09-15 08:48:34.451 +05:30 [INF] Executed action ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI) in 9.7212ms
+2025-09-15 08:48:34.458 +05:30 [INF] Executed endpoint 'ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI)'
+2025-09-15 08:48:34.461 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Mon, 15 Sep 2025 03:18:34 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+My-Key-From-Global: [Redacted]
+2025-09-15 08:48:34.463 +05:30 [INF] HTTP GET /Account/Login responded 200 in 27.3413 ms
+2025-09-15 08:48:34.466 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/Account/Login?ReturnUrl=%2F - - - 200 - text/html;+charset=utf-8 35.7811ms

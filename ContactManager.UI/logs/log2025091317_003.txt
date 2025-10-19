@@ -1,0 +1,848 @@
+2025-09-13 17:18:48.845 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-13 17:18:48.894 +05:30 [INF] Hosting environment: Development
+2025-09-13 17:18:48.903 +05:30 [INF] Content root path: C:\HarshaGlobal\DadassahebParctice\ContactManagerSolution\ContactManager.UI\
+2025-09-13 17:53:33.728 +05:30 [INF] User profile is available. Using 'C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-09-13 17:53:34.294 +05:30 [INF] Now listening on: http://localhost:5076
+2025-09-13 17:53:35.359 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5076/ - -
+2025-09-13 17:53:35.597 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /
+2025-09-13 17:53:39.566 +05:30 [INF] Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+2025-09-13 17:53:41.562 +05:30 [INF] Executed DbCommand (169ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__get_Item_0
+2025-09-13 17:53:42.149 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@__user_Id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2025-09-13 17:53:42.300 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-09-13 17:53:42.362 +05:30 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Index (ContactManager.UI)'
+2025-09-13 17:53:42.464 +05:30 [INF] Route matched with {action = "Index", controller = "Persons"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderOptions) on controller CRUDExample.Controllers.PersonsController (ContactManager.UI).
+2025-09-13 17:53:42.521 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-13 17:53:42.525 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-13 17:53:42.529 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-13 17:53:42.534 +05:30 [INF] PersonsListActionFilter.OnActionExecuting method
+2025-09-13 17:53:42.544 +05:30 [INF] Index action method of PersonsController
+2025-09-13 17:53:42.557 +05:30 [INF] GetFilteredPersons of PersonsService
+2025-09-13 17:53:42.566 +05:30 [INF] GetFilteredPersons of PersonsRepository
+2025-09-13 17:53:42.771 +05:30 [INF] Executed DbCommand (14ms) [Parameters=[@__searchString_0='?' (Size = 40)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+WHERE (@__searchString_0 LIKE N'') OR (CHARINDEX(@__searchString_0, [p].[PersonName]) > 0)
+2025-09-13 17:53:42.940 +05:30 [INF] Time for Filtered Persons from Database completed in 374.0 ms
+2025-09-13 17:53:42.979 +05:30 [INF] GetSortedPersons of PersonsService
+2025-09-13 17:53:43.015 +05:30 [INF] PersonsListActionFilter.OnActionExecuted method
+2025-09-13 17:53:43.424 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-13 17:53:43.429 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-13 17:53:43.433 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-13 17:53:43.446 +05:30 [INF] PersonsListResultFilter.OnResultExecutionAsync - before
+2025-09-13 17:53:43.490 +05:30 [INF] Executing ViewResult, running view Index.
+2025-09-13 17:53:50.344 +05:30 [INF] Executed ViewResult - view Index executed in 6871.565ms.
+2025-09-13 17:53:50.349 +05:30 [INF] PersonsListResultFilter.OnResultExecutionAsync - after
+2025-09-13 17:53:50.361 +05:30 [INF] Executed action CRUDExample.Controllers.PersonsController.Index (ContactManager.UI) in 7886.2316ms
+2025-09-13 17:53:50.367 +05:30 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Index (ContactManager.UI)'
+2025-09-13 17:53:50.380 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Sat, 13 Sep 2025 12:23:49 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Last-Modified: 2025-09-13 17:53
+Pragma: [Redacted]
+Set-Cookie: [Redacted]
+Transfer-Encoding: chunked
+My-Key-From-Global: [Redacted]
+MyKey-FromAction: [Redacted]
+My-Key-From-Controller: [Redacted]
+2025-09-13 17:53:50.393 +05:30 [INF] HTTP GET / responded 200 in 14798.9323 ms
+2025-09-13 17:53:50.396 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5076/_framework/aspnetcore-browser-refresh.js - -
+2025-09-13 17:53:50.396 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5076/_vs/browserLink - -
+2025-09-13 17:53:50.415 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5076/_framework/aspnetcore-browser-refresh.js - - - 200 12366 application/javascript;+charset=utf-8 17.3358ms
+2025-09-13 17:53:50.466 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5076/ - - - 200 - text/html;+charset=utf-8 15127.3915ms
+2025-09-13 17:53:50.600 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5076/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 204.1017ms
+2025-09-13 17:53:52.402 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5076/Account/SingOut - -
+2025-09-13 17:53:52.411 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Account/SingOut
+2025-09-13 17:53:52.432 +05:30 [INF] Executing endpoint 'ContactManager.UI.Controllers.AccountController.SingOut (ContactManager.UI)'
+2025-09-13 17:53:52.505 +05:30 [INF] Route matched with {action = "SingOut", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SingOut() on controller ContactManager.UI.Controllers.AccountController (ContactManager.UI).
+2025-09-13 17:53:52.514 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-13 17:53:52.534 +05:30 [INF] AuthenticationScheme: Identity.Application signed out.
+2025-09-13 17:53:52.545 +05:30 [INF] AuthenticationScheme: Identity.External signed out.
+2025-09-13 17:53:52.550 +05:30 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2025-09-13 17:53:52.557 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-13 17:53:52.562 +05:30 [INF] Executing RedirectResult, redirecting to /Persons/Index.
+2025-09-13 17:53:52.567 +05:30 [INF] Executed action ContactManager.UI.Controllers.AccountController.SingOut (ContactManager.UI) in 53.2716ms
+2025-09-13 17:53:52.576 +05:30 [INF] Executed endpoint 'ContactManager.UI.Controllers.AccountController.SingOut (ContactManager.UI)'
+2025-09-13 17:53:52.581 +05:30 [INF] Response:
+StatusCode: 302
+Cache-Control: [Redacted]
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Location: /Persons/Index
+Pragma: [Redacted]
+Set-Cookie: [Redacted]
+My-Key-From-Global: [Redacted]
+2025-09-13 17:53:52.585 +05:30 [INF] HTTP GET /Account/SingOut responded 302 in 173.7486 ms
+2025-09-13 17:53:52.594 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5076/Account/SingOut - - - 302 0 - 191.6770ms
+2025-09-13 17:53:52.598 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5076/Persons/Index - -
+2025-09-13 17:53:52.608 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Persons/Index
+2025-09-13 17:53:52.623 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-09-13 17:53:52.644 +05:30 [INF] AuthenticationScheme: Identity.Application was challenged.
+2025-09-13 17:53:52.650 +05:30 [INF] Response:
+StatusCode: 302
+Location: http://localhost:5076/Account/Login?ReturnUrl=%2FPersons%2FIndex
+2025-09-13 17:53:52.654 +05:30 [INF] HTTP GET /Persons/Index responded 302 in 46.3491 ms
+2025-09-13 17:53:52.663 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5076/Persons/Index - - - 302 0 - 65.0661ms
+2025-09-13 17:53:52.668 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5076/Account/Login?ReturnUrl=%2FPersons%2FIndex - -
+2025-09-13 17:53:52.675 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Account/Login
+2025-09-13 17:53:52.681 +05:30 [INF] Executing endpoint 'ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI)'
+2025-09-13 17:53:52.690 +05:30 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller ContactManager.UI.Controllers.AccountController (ContactManager.UI).
+2025-09-13 17:53:52.703 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-13 17:53:52.709 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-13 17:53:52.714 +05:30 [INF] Executing ViewResult, running view Login.
+2025-09-13 17:53:53.445 +05:30 [INF] Executed ViewResult - view Login executed in 731.9318ms.
+2025-09-13 17:53:53.452 +05:30 [INF] Executed action ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI) in 752.0063ms
+2025-09-13 17:53:53.456 +05:30 [INF] Executed endpoint 'ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI)'
+2025-09-13 17:53:53.460 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Sat, 13 Sep 2025 12:23:52 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+Transfer-Encoding: chunked
+My-Key-From-Global: [Redacted]
+2025-09-13 17:53:53.463 +05:30 [INF] HTTP GET /Account/Login responded 200 in 787.8368 ms
+2025-09-13 17:53:53.469 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5076/Account/Login?ReturnUrl=%2FPersons%2FIndex - - - 200 - text/html;+charset=utf-8 801.2573ms
+2025-09-13 17:53:53.486 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5076/_framework/aspnetcore-browser-refresh.js - -
+2025-09-13 17:53:53.496 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5076/_vs/browserLink - -
+2025-09-13 17:53:53.499 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5076/_framework/aspnetcore-browser-refresh.js - - - 200 12366 application/javascript;+charset=utf-8 12.2886ms
+2025-09-13 17:53:53.560 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5076/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 64.5828ms
+2025-09-13 17:53:55.789 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5076/Account/Register - -
+2025-09-13 17:53:55.798 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Account/Register
+2025-09-13 17:53:55.801 +05:30 [INF] Executing endpoint 'ContactManager.UI.Controllers.AccountController.Register (ContactManager.UI)'
+2025-09-13 17:53:55.812 +05:30 [INF] Route matched with {action = "Register", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register() on controller ContactManager.UI.Controllers.AccountController (ContactManager.UI).
+2025-09-13 17:53:55.856 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-13 17:53:55.863 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-13 17:53:55.868 +05:30 [INF] Executing ViewResult, running view Register.
+2025-09-13 17:53:56.528 +05:30 [INF] Executed ViewResult - view Register executed in 661.8456ms.
+2025-09-13 17:53:56.534 +05:30 [INF] Executed action ContactManager.UI.Controllers.AccountController.Register (ContactManager.UI) in 713.1624ms
+2025-09-13 17:53:56.540 +05:30 [INF] Executed endpoint 'ContactManager.UI.Controllers.AccountController.Register (ContactManager.UI)'
+2025-09-13 17:53:56.544 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Sat, 13 Sep 2025 12:23:55 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+Transfer-Encoding: chunked
+My-Key-From-Global: [Redacted]
+2025-09-13 17:53:56.546 +05:30 [INF] HTTP GET /Account/Register responded 200 in 748.8182 ms
+2025-09-13 17:53:56.555 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5076/Account/Register - - - 200 - text/html;+charset=utf-8 765.2906ms
+2025-09-13 17:53:56.564 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5076/_framework/aspnetcore-browser-refresh.js - -
+2025-09-13 17:53:56.564 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5076/_vs/browserLink - -
+2025-09-13 17:53:56.567 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5076/_framework/aspnetcore-browser-refresh.js - - - 200 12366 application/javascript;+charset=utf-8 2.9133ms
+2025-09-13 17:53:56.597 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5076/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 32.8507ms
+2025-09-13 17:53:59.465 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5076/.well-known/appspecific/com.chrome.devtools.json - -
+2025-09-13 17:53:59.469 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /.well-known/appspecific/com.chrome.devtools.json
+2025-09-13 17:53:59.476 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-09-13 17:53:59.481 +05:30 [INF] AuthenticationScheme: Identity.Application was challenged.
+2025-09-13 17:53:59.486 +05:30 [INF] Response:
+StatusCode: 302
+Location: http://localhost:5076/Account/Login?ReturnUrl=%2F.well-known%2Fappspecific%2Fcom.chrome.devtools.json
+2025-09-13 17:53:59.490 +05:30 [INF] HTTP GET /.well-known/appspecific/com.chrome.devtools.json responded 302 in 21.5675 ms
+2025-09-13 17:53:59.496 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5076/.well-known/appspecific/com.chrome.devtools.json - - - 302 0 - 30.9927ms
+2025-09-13 17:53:59.499 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5076/Account/Login?ReturnUrl=%2F.well-known%2Fappspecific%2Fcom.chrome.devtools.json - -
+2025-09-13 17:53:59.501 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Account/Login
+2025-09-13 17:53:59.505 +05:30 [INF] Executing endpoint 'ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI)'
+2025-09-13 17:53:59.508 +05:30 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller ContactManager.UI.Controllers.AccountController (ContactManager.UI).
+2025-09-13 17:53:59.514 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-13 17:53:59.517 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-13 17:53:59.523 +05:30 [INF] Executing ViewResult, running view Login.
+2025-09-13 17:53:59.530 +05:30 [INF] Executed ViewResult - view Login executed in 6.6199ms.
+2025-09-13 17:53:59.533 +05:30 [INF] Executed action ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI) in 19.7482ms
+2025-09-13 17:53:59.538 +05:30 [INF] Executed endpoint 'ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI)'
+2025-09-13 17:53:59.541 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Sat, 13 Sep 2025 12:23:58 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+Transfer-Encoding: chunked
+My-Key-From-Global: [Redacted]
+2025-09-13 17:53:59.544 +05:30 [INF] HTTP GET /Account/Login responded 200 in 42.4837 ms
+2025-09-13 17:53:59.549 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5076/Account/Login?ReturnUrl=%2F.well-known%2Fappspecific%2Fcom.chrome.devtools.json - - - 200 - text/html;+charset=utf-8 49.7697ms
+2025-09-13 17:54:18.110 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5076/Account/ValidateEmail?Email=dada%40gamil.com - -
+2025-09-13 17:54:18.118 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Account/ValidateEmail
+2025-09-13 17:54:18.126 +05:30 [INF] Executing endpoint 'ContactManager.UI.Controllers.AccountController.ValidateEmail (ContactManager.UI)'
+2025-09-13 17:54:18.148 +05:30 [INF] Route matched with {action = "ValidateEmail", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ValidateEmail(System.String) on controller ContactManager.UI.Controllers.AccountController (ContactManager.UI).
+2025-09-13 17:54:18.172 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-13 17:54:18.331 +05:30 [INF] Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+2025-09-13 17:54:18.388 +05:30 [INF] Executed DbCommand (12ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-09-13 17:54:18.401 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-13 17:54:18.408 +05:30 [INF] Executing JsonResult, writing value of type 'System.Boolean'.
+2025-09-13 17:54:18.435 +05:30 [INF] Executed action ContactManager.UI.Controllers.AccountController.ValidateEmail (ContactManager.UI) in 272.0662ms
+2025-09-13 17:54:18.440 +05:30 [INF] Executed endpoint 'ContactManager.UI.Controllers.AccountController.ValidateEmail (ContactManager.UI)'
+2025-09-13 17:54:18.444 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+Date: Sat, 13 Sep 2025 12:24:17 GMT
+Server: Kestrel
+Transfer-Encoding: chunked
+My-Key-From-Global: [Redacted]
+2025-09-13 17:54:18.449 +05:30 [INF] HTTP GET /Account/ValidateEmail responded 200 in 330.8813 ms
+2025-09-13 17:54:18.457 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5076/Account/ValidateEmail?Email=dada%40gamil.com - - - 200 - application/json;+charset=utf-8 347.1021ms
+2025-09-13 17:54:27.463 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5076/Account/ValidateEmail?Email=dada%40g - -
+2025-09-13 17:54:27.469 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Account/ValidateEmail
+2025-09-13 17:54:27.476 +05:30 [INF] Executing endpoint 'ContactManager.UI.Controllers.AccountController.ValidateEmail (ContactManager.UI)'
+2025-09-13 17:54:27.485 +05:30 [INF] Route matched with {action = "ValidateEmail", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ValidateEmail(System.String) on controller ContactManager.UI.Controllers.AccountController (ContactManager.UI).
+2025-09-13 17:54:27.501 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-13 17:54:27.549 +05:30 [INF] Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+2025-09-13 17:54:27.591 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-09-13 17:54:27.614 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-13 17:54:27.621 +05:30 [INF] Executing JsonResult, writing value of type 'System.Boolean'.
+2025-09-13 17:54:27.630 +05:30 [INF] Executed action ContactManager.UI.Controllers.AccountController.ValidateEmail (ContactManager.UI) in 130.2368ms
+2025-09-13 17:54:27.640 +05:30 [INF] Executed endpoint 'ContactManager.UI.Controllers.AccountController.ValidateEmail (ContactManager.UI)'
+2025-09-13 17:54:27.649 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+Date: Sat, 13 Sep 2025 12:24:26 GMT
+Server: Kestrel
+Transfer-Encoding: chunked
+My-Key-From-Global: [Redacted]
+2025-09-13 17:54:27.655 +05:30 [INF] HTTP GET /Account/ValidateEmail responded 200 in 185.8583 ms
+2025-09-13 17:54:27.669 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5076/Account/ValidateEmail?Email=dada%40g - - - 200 - application/json;+charset=utf-8 206.2218ms
+2025-09-13 17:54:29.009 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5076/Account/ValidateEmail?Email=dada%40gm - -
+2025-09-13 17:54:29.013 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Account/ValidateEmail
+2025-09-13 17:54:29.017 +05:30 [INF] Executing endpoint 'ContactManager.UI.Controllers.AccountController.ValidateEmail (ContactManager.UI)'
+2025-09-13 17:54:29.022 +05:30 [INF] Route matched with {action = "ValidateEmail", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ValidateEmail(System.String) on controller ContactManager.UI.Controllers.AccountController (ContactManager.UI).
+2025-09-13 17:54:29.031 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-13 17:54:29.036 +05:30 [INF] Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+2025-09-13 17:54:29.049 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-09-13 17:54:29.062 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-13 17:54:29.066 +05:30 [INF] Executing JsonResult, writing value of type 'System.Boolean'.
+2025-09-13 17:54:29.072 +05:30 [INF] Executed action ContactManager.UI.Controllers.AccountController.ValidateEmail (ContactManager.UI) in 40.917ms
+2025-09-13 17:54:29.078 +05:30 [INF] Executed endpoint 'ContactManager.UI.Controllers.AccountController.ValidateEmail (ContactManager.UI)'
+2025-09-13 17:54:29.084 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+Date: Sat, 13 Sep 2025 12:24:28 GMT
+Server: Kestrel
+Transfer-Encoding: chunked
+My-Key-From-Global: [Redacted]
+2025-09-13 17:54:29.088 +05:30 [INF] HTTP GET /Account/ValidateEmail responded 200 in 74.9080 ms
+2025-09-13 17:54:29.096 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5076/Account/ValidateEmail?Email=dada%40gm - - - 200 - application/json;+charset=utf-8 87.4876ms
+2025-09-13 17:54:29.251 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5076/Account/ValidateEmail?Email=dada%40gmai - -
+2025-09-13 17:54:29.258 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Account/ValidateEmail
+2025-09-13 17:54:29.265 +05:30 [INF] Executing endpoint 'ContactManager.UI.Controllers.AccountController.ValidateEmail (ContactManager.UI)'
+2025-09-13 17:54:29.273 +05:30 [INF] Route matched with {action = "ValidateEmail", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ValidateEmail(System.String) on controller ContactManager.UI.Controllers.AccountController (ContactManager.UI).
+2025-09-13 17:54:29.289 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-13 17:54:29.297 +05:30 [INF] Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+2025-09-13 17:54:29.317 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-09-13 17:54:29.341 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-13 17:54:29.348 +05:30 [INF] Executing JsonResult, writing value of type 'System.Boolean'.
+2025-09-13 17:54:29.356 +05:30 [INF] Executed action ContactManager.UI.Controllers.AccountController.ValidateEmail (ContactManager.UI) in 68.6078ms
+2025-09-13 17:54:29.366 +05:30 [INF] Executed endpoint 'ContactManager.UI.Controllers.AccountController.ValidateEmail (ContactManager.UI)'
+2025-09-13 17:54:29.375 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+Date: Sat, 13 Sep 2025 12:24:28 GMT
+Server: Kestrel
+Transfer-Encoding: chunked
+My-Key-From-Global: [Redacted]
+2025-09-13 17:54:29.381 +05:30 [INF] HTTP GET /Account/ValidateEmail responded 200 in 123.1853 ms
+2025-09-13 17:54:29.394 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5076/Account/ValidateEmail?Email=dada%40gmai - - - 200 - application/json;+charset=utf-8 143.6248ms
+2025-09-13 17:54:29.560 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5076/Account/ValidateEmail?Email=dada%40gmail - -
+2025-09-13 17:54:29.567 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Account/ValidateEmail
+2025-09-13 17:54:29.568 +05:30 [INF] Executing endpoint 'ContactManager.UI.Controllers.AccountController.ValidateEmail (ContactManager.UI)'
+2025-09-13 17:54:29.572 +05:30 [INF] Route matched with {action = "ValidateEmail", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ValidateEmail(System.String) on controller ContactManager.UI.Controllers.AccountController (ContactManager.UI).
+2025-09-13 17:54:29.598 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-13 17:54:29.602 +05:30 [INF] Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+2025-09-13 17:54:29.624 +05:30 [INF] Executed DbCommand (15ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-09-13 17:54:29.632 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-13 17:54:29.635 +05:30 [INF] Executing JsonResult, writing value of type 'System.Boolean'.
+2025-09-13 17:54:29.640 +05:30 [INF] Executed action ContactManager.UI.Controllers.AccountController.ValidateEmail (ContactManager.UI) in 41.9137ms
+2025-09-13 17:54:29.644 +05:30 [INF] Executed endpoint 'ContactManager.UI.Controllers.AccountController.ValidateEmail (ContactManager.UI)'
+2025-09-13 17:54:29.649 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+Date: Sat, 13 Sep 2025 12:24:28 GMT
+Server: Kestrel
+Transfer-Encoding: chunked
+My-Key-From-Global: [Redacted]
+2025-09-13 17:54:29.653 +05:30 [INF] HTTP GET /Account/ValidateEmail responded 200 in 85.7146 ms
+2025-09-13 17:54:29.662 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5076/Account/ValidateEmail?Email=dada%40gmail - - - 200 - application/json;+charset=utf-8 102.9621ms
+2025-09-13 17:54:30.127 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5076/Account/ValidateEmail?Email=dada%40gmail.c - -
+2025-09-13 17:54:30.131 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Account/ValidateEmail
+2025-09-13 17:54:30.136 +05:30 [INF] Executing endpoint 'ContactManager.UI.Controllers.AccountController.ValidateEmail (ContactManager.UI)'
+2025-09-13 17:54:30.143 +05:30 [INF] Route matched with {action = "ValidateEmail", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ValidateEmail(System.String) on controller ContactManager.UI.Controllers.AccountController (ContactManager.UI).
+2025-09-13 17:54:30.155 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-13 17:54:30.160 +05:30 [INF] Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+2025-09-13 17:54:30.177 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-09-13 17:54:30.193 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-13 17:54:30.201 +05:30 [INF] Executing JsonResult, writing value of type 'System.Boolean'.
+2025-09-13 17:54:30.209 +05:30 [INF] Executed action ContactManager.UI.Controllers.AccountController.ValidateEmail (ContactManager.UI) in 55.6121ms
+2025-09-13 17:54:30.216 +05:30 [INF] Executed endpoint 'ContactManager.UI.Controllers.AccountController.ValidateEmail (ContactManager.UI)'
+2025-09-13 17:54:30.222 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+Date: Sat, 13 Sep 2025 12:24:29 GMT
+Server: Kestrel
+Transfer-Encoding: chunked
+My-Key-From-Global: [Redacted]
+2025-09-13 17:54:30.227 +05:30 [INF] HTTP GET /Account/ValidateEmail responded 200 in 95.7669 ms
+2025-09-13 17:54:30.240 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5076/Account/ValidateEmail?Email=dada%40gmail.c - - - 200 - application/json;+charset=utf-8 112.7968ms
+2025-09-13 17:54:30.306 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5076/Account/ValidateEmail?Email=dada%40gmail.co - -
+2025-09-13 17:54:30.311 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Account/ValidateEmail
+2025-09-13 17:54:30.316 +05:30 [INF] Executing endpoint 'ContactManager.UI.Controllers.AccountController.ValidateEmail (ContactManager.UI)'
+2025-09-13 17:54:30.322 +05:30 [INF] Route matched with {action = "ValidateEmail", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ValidateEmail(System.String) on controller ContactManager.UI.Controllers.AccountController (ContactManager.UI).
+2025-09-13 17:54:30.333 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-13 17:54:30.340 +05:30 [INF] Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+2025-09-13 17:54:30.359 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-09-13 17:54:30.375 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-13 17:54:30.380 +05:30 [INF] Executing JsonResult, writing value of type 'System.Boolean'.
+2025-09-13 17:54:30.392 +05:30 [INF] Executed action ContactManager.UI.Controllers.AccountController.ValidateEmail (ContactManager.UI) in 58.9855ms
+2025-09-13 17:54:30.399 +05:30 [INF] Executed endpoint 'ContactManager.UI.Controllers.AccountController.ValidateEmail (ContactManager.UI)'
+2025-09-13 17:54:30.406 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+Date: Sat, 13 Sep 2025 12:24:29 GMT
+Server: Kestrel
+Transfer-Encoding: chunked
+My-Key-From-Global: [Redacted]
+2025-09-13 17:54:30.411 +05:30 [INF] HTTP GET /Account/ValidateEmail responded 200 in 99.8723 ms
+2025-09-13 17:54:30.422 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5076/Account/ValidateEmail?Email=dada%40gmail.co - - - 200 - application/json;+charset=utf-8 116.3495ms
+2025-09-13 17:54:31.472 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5076/Account/ValidateEmail?Email=dada%40gmail.com - -
+2025-09-13 17:54:31.479 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Account/ValidateEmail
+2025-09-13 17:54:31.487 +05:30 [INF] Executing endpoint 'ContactManager.UI.Controllers.AccountController.ValidateEmail (ContactManager.UI)'
+2025-09-13 17:54:31.497 +05:30 [INF] Route matched with {action = "ValidateEmail", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ValidateEmail(System.String) on controller ContactManager.UI.Controllers.AccountController (ContactManager.UI).
+2025-09-13 17:54:31.513 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-13 17:54:31.524 +05:30 [INF] Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+2025-09-13 17:54:31.548 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-09-13 17:54:31.574 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-13 17:54:31.581 +05:30 [INF] Executing JsonResult, writing value of type 'System.Boolean'.
+2025-09-13 17:54:31.591 +05:30 [INF] Executed action ContactManager.UI.Controllers.AccountController.ValidateEmail (ContactManager.UI) in 78.7319ms
+2025-09-13 17:54:31.603 +05:30 [INF] Executed endpoint 'ContactManager.UI.Controllers.AccountController.ValidateEmail (ContactManager.UI)'
+2025-09-13 17:54:31.613 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+Date: Sat, 13 Sep 2025 12:24:31 GMT
+Server: Kestrel
+Transfer-Encoding: chunked
+My-Key-From-Global: [Redacted]
+2025-09-13 17:54:31.621 +05:30 [INF] HTTP GET /Account/ValidateEmail responded 200 in 141.3409 ms
+2025-09-13 17:54:31.638 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5076/Account/ValidateEmail?Email=dada%40gmail.com - - - 200 - application/json;+charset=utf-8 165.6154ms
+2025-09-13 17:54:38.286 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5076/Account/ValidateEmail?Email=dada1%40gmail.com - -
+2025-09-13 17:54:38.291 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Account/ValidateEmail
+2025-09-13 17:54:38.295 +05:30 [INF] Executing endpoint 'ContactManager.UI.Controllers.AccountController.ValidateEmail (ContactManager.UI)'
+2025-09-13 17:54:38.300 +05:30 [INF] Route matched with {action = "ValidateEmail", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ValidateEmail(System.String) on controller ContactManager.UI.Controllers.AccountController (ContactManager.UI).
+2025-09-13 17:54:38.309 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-13 17:54:38.316 +05:30 [INF] Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+2025-09-13 17:54:38.331 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-09-13 17:54:38.341 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-13 17:54:38.344 +05:30 [INF] Executing JsonResult, writing value of type 'System.Boolean'.
+2025-09-13 17:54:38.349 +05:30 [INF] Executed action ContactManager.UI.Controllers.AccountController.ValidateEmail (ContactManager.UI) in 39.9988ms
+2025-09-13 17:54:38.354 +05:30 [INF] Executed endpoint 'ContactManager.UI.Controllers.AccountController.ValidateEmail (ContactManager.UI)'
+2025-09-13 17:54:38.358 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+Date: Sat, 13 Sep 2025 12:24:38 GMT
+Server: Kestrel
+Transfer-Encoding: chunked
+My-Key-From-Global: [Redacted]
+2025-09-13 17:54:38.362 +05:30 [INF] HTTP GET /Account/ValidateEmail responded 200 in 71.1094 ms
+2025-09-13 17:54:38.371 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5076/Account/ValidateEmail?Email=dada1%40gmail.com - - - 200 - application/json;+charset=utf-8 84.5534ms
+2025-09-13 17:54:39.086 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5076/Account/ValidateEmail?Email=dada11%40gmail.com - -
+2025-09-13 17:54:39.089 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Account/ValidateEmail
+2025-09-13 17:54:39.093 +05:30 [INF] Executing endpoint 'ContactManager.UI.Controllers.AccountController.ValidateEmail (ContactManager.UI)'
+2025-09-13 17:54:39.097 +05:30 [INF] Route matched with {action = "ValidateEmail", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ValidateEmail(System.String) on controller ContactManager.UI.Controllers.AccountController (ContactManager.UI).
+2025-09-13 17:54:39.106 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-13 17:54:39.110 +05:30 [INF] Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+2025-09-13 17:54:39.127 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-09-13 17:54:39.140 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-13 17:54:39.144 +05:30 [INF] Executing JsonResult, writing value of type 'System.Boolean'.
+2025-09-13 17:54:39.149 +05:30 [INF] Executed action ContactManager.UI.Controllers.AccountController.ValidateEmail (ContactManager.UI) in 43.4278ms
+2025-09-13 17:54:39.157 +05:30 [INF] Executed endpoint 'ContactManager.UI.Controllers.AccountController.ValidateEmail (ContactManager.UI)'
+2025-09-13 17:54:39.162 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+Date: Sat, 13 Sep 2025 12:24:39 GMT
+Server: Kestrel
+Transfer-Encoding: chunked
+My-Key-From-Global: [Redacted]
+2025-09-13 17:54:39.166 +05:30 [INF] HTTP GET /Account/ValidateEmail responded 200 in 77.7503 ms
+2025-09-13 17:54:39.175 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5076/Account/ValidateEmail?Email=dada11%40gmail.com - - - 200 - application/json;+charset=utf-8 88.8972ms
+2025-09-13 17:54:40.961 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5076/Account/ValidateEmail?Email=dada1%40gmail.com - -
+2025-09-13 17:54:40.966 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Account/ValidateEmail
+2025-09-13 17:54:40.970 +05:30 [INF] Executing endpoint 'ContactManager.UI.Controllers.AccountController.ValidateEmail (ContactManager.UI)'
+2025-09-13 17:54:40.975 +05:30 [INF] Route matched with {action = "ValidateEmail", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ValidateEmail(System.String) on controller ContactManager.UI.Controllers.AccountController (ContactManager.UI).
+2025-09-13 17:54:40.985 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-13 17:54:40.989 +05:30 [INF] Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+2025-09-13 17:54:41.002 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-09-13 17:54:41.016 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-13 17:54:41.021 +05:30 [INF] Executing JsonResult, writing value of type 'System.Boolean'.
+2025-09-13 17:54:41.026 +05:30 [INF] Executed action ContactManager.UI.Controllers.AccountController.ValidateEmail (ContactManager.UI) in 41.8733ms
+2025-09-13 17:54:41.033 +05:30 [INF] Executed endpoint 'ContactManager.UI.Controllers.AccountController.ValidateEmail (ContactManager.UI)'
+2025-09-13 17:54:41.038 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+Date: Sat, 13 Sep 2025 12:24:40 GMT
+Server: Kestrel
+Transfer-Encoding: chunked
+My-Key-From-Global: [Redacted]
+2025-09-13 17:54:41.042 +05:30 [INF] HTTP GET /Account/ValidateEmail responded 200 in 76.6961 ms
+2025-09-13 17:54:41.052 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5076/Account/ValidateEmail?Email=dada1%40gmail.com - - - 200 - application/json;+charset=utf-8 90.3091ms
+2025-09-13 17:54:46.055 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5076/.well-known/appspecific/com.chrome.devtools.json - -
+2025-09-13 17:54:46.058 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /.well-known/appspecific/com.chrome.devtools.json
+2025-09-13 17:54:46.062 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-09-13 17:54:46.066 +05:30 [INF] AuthenticationScheme: Identity.Application was challenged.
+2025-09-13 17:54:46.070 +05:30 [INF] Response:
+StatusCode: 302
+Location: http://localhost:5076/Account/Login?ReturnUrl=%2F.well-known%2Fappspecific%2Fcom.chrome.devtools.json
+2025-09-13 17:54:46.075 +05:30 [INF] HTTP GET /.well-known/appspecific/com.chrome.devtools.json responded 302 in 16.3990 ms
+2025-09-13 17:54:46.081 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5076/.well-known/appspecific/com.chrome.devtools.json - - - 302 0 - 25.5822ms
+2025-09-13 17:54:46.083 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5076/Account/Login?ReturnUrl=%2F.well-known%2Fappspecific%2Fcom.chrome.devtools.json - -
+2025-09-13 17:54:46.088 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Account/Login
+2025-09-13 17:54:46.092 +05:30 [INF] Executing endpoint 'ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI)'
+2025-09-13 17:54:46.096 +05:30 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller ContactManager.UI.Controllers.AccountController (ContactManager.UI).
+2025-09-13 17:54:46.102 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-13 17:54:46.107 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-13 17:54:46.110 +05:30 [INF] Executing ViewResult, running view Login.
+2025-09-13 17:54:46.116 +05:30 [INF] Executed ViewResult - view Login executed in 5.2321ms.
+2025-09-13 17:54:46.120 +05:30 [INF] Executed action ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI) in 18.2165ms
+2025-09-13 17:54:46.125 +05:30 [INF] Executed endpoint 'ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI)'
+2025-09-13 17:54:46.127 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Sat, 13 Sep 2025 12:24:45 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+Transfer-Encoding: chunked
+My-Key-From-Global: [Redacted]
+2025-09-13 17:54:46.129 +05:30 [INF] HTTP GET /Account/Login responded 200 in 41.0279 ms
+2025-09-13 17:54:46.134 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5076/Account/Login?ReturnUrl=%2F.well-known%2Fappspecific%2Fcom.chrome.devtools.json - - - 200 - text/html;+charset=utf-8 51.0028ms
+2025-09-13 17:54:50.452 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5076/Account/Register - -
+2025-09-13 17:54:50.461 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Account/Register
+2025-09-13 17:54:50.464 +05:30 [INF] Executing endpoint 'ContactManager.UI.Controllers.AccountController.Register (ContactManager.UI)'
+2025-09-13 17:54:50.470 +05:30 [INF] Route matched with {action = "Register", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register() on controller ContactManager.UI.Controllers.AccountController (ContactManager.UI).
+2025-09-13 17:54:50.477 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-13 17:54:50.480 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-13 17:54:50.483 +05:30 [INF] Executing ViewResult, running view Register.
+2025-09-13 17:54:50.493 +05:30 [INF] Executed ViewResult - view Register executed in 10.0816ms.
+2025-09-13 17:54:50.497 +05:30 [INF] Executed action ContactManager.UI.Controllers.AccountController.Register (ContactManager.UI) in 20.4087ms
+2025-09-13 17:54:50.500 +05:30 [INF] Executed endpoint 'ContactManager.UI.Controllers.AccountController.Register (ContactManager.UI)'
+2025-09-13 17:54:50.509 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Sat, 13 Sep 2025 12:24:50 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+Transfer-Encoding: chunked
+My-Key-From-Global: [Redacted]
+2025-09-13 17:54:50.511 +05:30 [INF] HTTP GET /Account/Register responded 200 in 50.0916 ms
+2025-09-13 17:54:50.516 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5076/Account/Register - - - 200 - text/html;+charset=utf-8 63.9084ms
+2025-09-13 17:54:50.530 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5076/Stylesheet.css - -
+2025-09-13 17:54:50.533 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Stylesheet.css
+2025-09-13 17:54:50.546 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5076/_framework/aspnetcore-browser-refresh.js - -
+2025-09-13 17:54:50.546 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5076/_vs/browserLink - -
+2025-09-13 17:54:50.548 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5076/_framework/aspnetcore-browser-refresh.js - - - 200 12366 application/javascript;+charset=utf-8 2.3419ms
+2025-09-13 17:54:50.561 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5076/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 15.2690ms
+2025-09-13 17:54:50.603 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5076/.well-known/appspecific/com.chrome.devtools.json - -
+2025-09-13 17:54:50.605 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /.well-known/appspecific/com.chrome.devtools.json
+2025-09-13 17:54:50.608 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-09-13 17:54:50.610 +05:30 [INF] AuthenticationScheme: Identity.Application was challenged.
+2025-09-13 17:54:50.613 +05:30 [INF] Response:
+StatusCode: 302
+Location: http://localhost:5076/Account/Login?ReturnUrl=%2F.well-known%2Fappspecific%2Fcom.chrome.devtools.json
+2025-09-13 17:54:50.615 +05:30 [INF] HTTP GET /.well-known/appspecific/com.chrome.devtools.json responded 302 in 10.5693 ms
+2025-09-13 17:54:50.623 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5076/.well-known/appspecific/com.chrome.devtools.json - - - 302 0 - 20.2801ms
+2025-09-13 17:54:50.626 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5076/Account/Login?ReturnUrl=%2F.well-known%2Fappspecific%2Fcom.chrome.devtools.json - -
+2025-09-13 17:54:50.628 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Account/Login
+2025-09-13 17:54:50.631 +05:30 [INF] Executing endpoint 'ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI)'
+2025-09-13 17:54:50.634 +05:30 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller ContactManager.UI.Controllers.AccountController (ContactManager.UI).
+2025-09-13 17:54:50.635 +05:30 [INF] Sending file. Request path: '/Stylesheet.css'. Physical path: 'C:\HarshaGlobal\DadassahebParctice\ContactManagerSolution\ContactManager.UI\wwwroot\StyleSheet.css'
+2025-09-13 17:54:50.639 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-13 17:54:50.642 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: text/css
+Date: Sat, 13 Sep 2025 12:24:50 GMT
+Server: Kestrel
+Accept-Ranges: bytes
+ETag: [Redacted]
+Last-Modified: Thu, 26 Jun 2025 15:31:58 GMT
+Content-Length: 10279
+2025-09-13 17:54:50.644 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-13 17:54:50.646 +05:30 [INF] HTTP GET /Stylesheet.css responded 200 in 112.5081 ms
+2025-09-13 17:54:50.647 +05:30 [INF] Executing ViewResult, running view Login.
+2025-09-13 17:54:50.652 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5076/Stylesheet.css - - - 200 10279 text/css 122.2308ms
+2025-09-13 17:54:50.660 +05:30 [INF] Executed ViewResult - view Login executed in 12.5884ms.
+2025-09-13 17:54:50.673 +05:30 [INF] Executed action ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI) in 34.2949ms
+2025-09-13 17:54:50.677 +05:30 [INF] Executed endpoint 'ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI)'
+2025-09-13 17:54:50.680 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Sat, 13 Sep 2025 12:24:50 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+Transfer-Encoding: chunked
+My-Key-From-Global: [Redacted]
+2025-09-13 17:54:50.682 +05:30 [INF] HTTP GET /Account/Login responded 200 in 53.7456 ms
+2025-09-13 17:54:50.693 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5076/Account/Login?ReturnUrl=%2F.well-known%2Fappspecific%2Fcom.chrome.devtools.json - - - 200 - text/html;+charset=utf-8 66.3191ms
+2025-09-13 17:54:50.694 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5076/jquery.validate.unobtrusive.min.js - -
+2025-09-13 17:54:50.698 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /jquery.validate.unobtrusive.min.js
+2025-09-13 17:54:50.831 +05:30 [INF] Sending file. Request path: '/jquery.validate.unobtrusive.min.js'. Physical path: 'C:\HarshaGlobal\DadassahebParctice\ContactManagerSolution\ContactManager.UI\wwwroot\jquery.validate.unobtrusive.min.js'
+2025-09-13 17:54:50.843 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/javascript
+Date: Sat, 13 Sep 2025 12:24:50 GMT
+Server: Kestrel
+Accept-Ranges: bytes
+ETag: [Redacted]
+Last-Modified: Thu, 26 Jun 2025 15:31:58 GMT
+Content-Length: 5867
+2025-09-13 17:54:50.845 +05:30 [INF] HTTP GET /jquery.validate.unobtrusive.min.js responded 200 in 147.8046 ms
+2025-09-13 17:54:50.850 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5076/jquery.validate.unobtrusive.min.js - - - 200 5867 application/javascript 155.5880ms
+2025-09-13 17:54:50.905 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5076/favicon.ico - -
+2025-09-13 17:54:50.908 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /favicon.ico
+2025-09-13 17:54:50.971 +05:30 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\HarshaGlobal\DadassahebParctice\ContactManagerSolution\ContactManager.UI\wwwroot\favicon.ico'
+2025-09-13 17:54:50.976 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: image/x-icon
+Date: Sat, 13 Sep 2025 12:24:50 GMT
+Server: Kestrel
+Accept-Ranges: bytes
+ETag: [Redacted]
+Last-Modified: Tue, 09 Sep 2025 14:49:19 GMT
+Content-Length: 5430
+2025-09-13 17:54:50.979 +05:30 [INF] HTTP GET /favicon.ico responded 200 in 70.8832 ms
+2025-09-13 17:54:50.984 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5076/favicon.ico - - - 200 5430 image/x-icon 78.4402ms
+2025-09-13 17:54:55.146 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5076/Account/Register - -
+2025-09-13 17:54:55.157 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Account/Register
+2025-09-13 17:54:55.161 +05:30 [INF] Executing endpoint 'ContactManager.UI.Controllers.AccountController.Register (ContactManager.UI)'
+2025-09-13 17:54:55.166 +05:30 [INF] Route matched with {action = "Register", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register() on controller ContactManager.UI.Controllers.AccountController (ContactManager.UI).
+2025-09-13 17:54:55.178 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-13 17:54:55.183 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-13 17:54:55.190 +05:30 [INF] Executing ViewResult, running view Register.
+2025-09-13 17:54:55.199 +05:30 [INF] Executed ViewResult - view Register executed in 10.1568ms.
+2025-09-13 17:54:55.207 +05:30 [INF] Executed action ContactManager.UI.Controllers.AccountController.Register (ContactManager.UI) in 28.7971ms
+2025-09-13 17:54:55.213 +05:30 [INF] Executed endpoint 'ContactManager.UI.Controllers.AccountController.Register (ContactManager.UI)'
+2025-09-13 17:54:55.218 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Sat, 13 Sep 2025 12:24:54 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+Transfer-Encoding: chunked
+My-Key-From-Global: [Redacted]
+2025-09-13 17:54:55.226 +05:30 [INF] HTTP GET /Account/Register responded 200 in 69.1106 ms
+2025-09-13 17:54:55.232 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5076/Account/Register - - - 200 - text/html;+charset=utf-8 85.7369ms
+2025-09-13 17:54:55.252 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5076/Stylesheet.css - -
+2025-09-13 17:54:55.260 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5076/.well-known/appspecific/com.chrome.devtools.json - -
+2025-09-13 17:54:55.262 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Stylesheet.css
+2025-09-13 17:54:55.265 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5076/_framework/aspnetcore-browser-refresh.js - -
+2025-09-13 17:54:55.268 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5076/_vs/browserLink - -
+2025-09-13 17:54:55.265 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /.well-known/appspecific/com.chrome.devtools.json
+2025-09-13 17:54:55.370 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-09-13 17:54:55.311 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5076/_framework/aspnetcore-browser-refresh.js - - - 200 12366 application/javascript;+charset=utf-8 45.3128ms
+2025-09-13 17:54:55.453 +05:30 [INF] AuthenticationScheme: Identity.Application was challenged.
+2025-09-13 17:54:55.314 +05:30 [INF] Sending file. Request path: '/Stylesheet.css'. Physical path: 'C:\HarshaGlobal\DadassahebParctice\ContactManagerSolution\ContactManager.UI\wwwroot\StyleSheet.css'
+2025-09-13 17:54:55.485 +05:30 [INF] Response:
+StatusCode: 302
+Location: http://localhost:5076/Account/Login?ReturnUrl=%2F.well-known%2Fappspecific%2Fcom.chrome.devtools.json
+2025-09-13 17:54:55.466 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5076/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 198.6485ms
+2025-09-13 17:54:55.551 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: text/css
+Date: Sat, 13 Sep 2025 12:24:55 GMT
+Server: Kestrel
+Accept-Ranges: bytes
+ETag: [Redacted]
+Last-Modified: Thu, 26 Jun 2025 15:31:58 GMT
+Content-Length: 10279
+2025-09-13 17:54:55.555 +05:30 [INF] HTTP GET /.well-known/appspecific/com.chrome.devtools.json responded 302 in 290.5782 ms
+2025-09-13 17:54:55.562 +05:30 [INF] HTTP GET /Stylesheet.css responded 200 in 300.1662 ms
+2025-09-13 17:54:55.571 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5076/Stylesheet.css - - - 200 10279 text/css 319.0613ms
+2025-09-13 17:54:55.567 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5076/.well-known/appspecific/com.chrome.devtools.json - - - 302 0 - 307.5618ms
+2025-09-13 17:54:55.575 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5076/jquery.validate.unobtrusive.min.js - -
+2025-09-13 17:54:55.578 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5076/Account/Login?ReturnUrl=%2F.well-known%2Fappspecific%2Fcom.chrome.devtools.json - -
+2025-09-13 17:54:55.579 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /jquery.validate.unobtrusive.min.js
+2025-09-13 17:54:55.581 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Account/Login
+2025-09-13 17:54:55.590 +05:30 [INF] Sending file. Request path: '/jquery.validate.unobtrusive.min.js'. Physical path: 'C:\HarshaGlobal\DadassahebParctice\ContactManagerSolution\ContactManager.UI\wwwroot\jquery.validate.unobtrusive.min.js'
+2025-09-13 17:54:55.590 +05:30 [INF] Executing endpoint 'ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI)'
+2025-09-13 17:54:55.595 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/javascript
+Date: Sat, 13 Sep 2025 12:24:55 GMT
+Server: Kestrel
+Accept-Ranges: bytes
+ETag: [Redacted]
+Last-Modified: Thu, 26 Jun 2025 15:31:58 GMT
+Content-Length: 5867
+2025-09-13 17:54:55.597 +05:30 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller ContactManager.UI.Controllers.AccountController (ContactManager.UI).
+2025-09-13 17:54:55.599 +05:30 [INF] HTTP GET /jquery.validate.unobtrusive.min.js responded 200 in 19.5803 ms
+2025-09-13 17:54:55.603 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-13 17:54:55.606 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5076/jquery.validate.unobtrusive.min.js - - - 200 5867 application/javascript 30.6613ms
+2025-09-13 17:54:55.608 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-13 17:54:55.612 +05:30 [INF] Executing ViewResult, running view Login.
+2025-09-13 17:54:55.616 +05:30 [INF] Executed ViewResult - view Login executed in 4.2973ms.
+2025-09-13 17:54:55.619 +05:30 [INF] Executed action ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI) in 16.4596ms
+2025-09-13 17:54:55.632 +05:30 [INF] Executed endpoint 'ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI)'
+2025-09-13 17:54:55.636 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Sat, 13 Sep 2025 12:24:55 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+Transfer-Encoding: chunked
+My-Key-From-Global: [Redacted]
+2025-09-13 17:54:55.646 +05:30 [INF] HTTP GET /Account/Login responded 200 in 64.4347 ms
+2025-09-13 17:54:55.659 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5076/Account/Login?ReturnUrl=%2F.well-known%2Fappspecific%2Fcom.chrome.devtools.json - - - 200 - text/html;+charset=utf-8 81.5998ms
+2025-09-13 17:54:55.668 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5076/favicon.ico - -
+2025-09-13 17:54:55.679 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /favicon.ico
+2025-09-13 17:54:55.685 +05:30 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\HarshaGlobal\DadassahebParctice\ContactManagerSolution\ContactManager.UI\wwwroot\favicon.ico'
+2025-09-13 17:54:55.695 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: image/x-icon
+Date: Sat, 13 Sep 2025 12:24:55 GMT
+Server: Kestrel
+Accept-Ranges: bytes
+ETag: [Redacted]
+Last-Modified: Tue, 09 Sep 2025 14:49:19 GMT
+Content-Length: 5430
+2025-09-13 17:54:55.697 +05:30 [INF] HTTP GET /favicon.ico responded 200 in 18.0984 ms
+2025-09-13 17:54:55.706 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5076/favicon.ico - - - 200 5430 image/x-icon 38.4875ms
+2025-09-13 17:55:13.448 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5076/Account/ValidateEmail?Email=dada%40gmail.com - -
+2025-09-13 17:55:13.457 +05:30 [INF] Request:
+Protocol: HTTP/1.1
+Method: GET
+Scheme: http
+PathBase: 
+Path: /Account/ValidateEmail
+2025-09-13 17:55:13.460 +05:30 [INF] Executing endpoint 'ContactManager.UI.Controllers.AccountController.ValidateEmail (ContactManager.UI)'
+2025-09-13 17:55:13.464 +05:30 [INF] Route matched with {action = "ValidateEmail", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ValidateEmail(System.String) on controller ContactManager.UI.Controllers.AccountController (ContactManager.UI).
+2025-09-13 17:55:13.474 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-13 17:55:13.477 +05:30 [INF] Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+2025-09-13 17:55:13.493 +05:30 [INF] Executed DbCommand (9ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2025-09-13 17:55:13.501 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-13 17:55:13.504 +05:30 [INF] Executing JsonResult, writing value of type 'System.Boolean'.
+2025-09-13 17:55:13.509 +05:30 [INF] Executed action ContactManager.UI.Controllers.AccountController.ValidateEmail (ContactManager.UI) in 35.9537ms
+2025-09-13 17:55:13.514 +05:30 [INF] Executed endpoint 'ContactManager.UI.Controllers.AccountController.ValidateEmail (ContactManager.UI)'
+2025-09-13 17:55:13.518 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/json; charset=utf-8
+Date: Sat, 13 Sep 2025 12:25:13 GMT
+Server: Kestrel
+Transfer-Encoding: chunked
+My-Key-From-Global: [Redacted]
+2025-09-13 17:55:13.521 +05:30 [INF] HTTP GET /Account/ValidateEmail responded 200 in 63.7642 ms
+2025-09-13 17:55:13.528 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5076/Account/ValidateEmail?Email=dada%40gmail.com - - - 200 - application/json;+charset=utf-8 79.8291ms

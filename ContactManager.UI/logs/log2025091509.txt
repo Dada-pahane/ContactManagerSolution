@@ -1,0 +1,490 @@
+2025-09-15 09:32:03.974 +05:30 [INF] User profile is available. Using 'C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-09-15 09:32:04.460 +05:30 [INF] Now listening on: https://localhost:5076
+2025-09-15 09:32:05.226 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/ - -
+2025-09-15 09:32:05.401 +05:30 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /
+2025-09-15 09:32:05.487 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-09-15 09:32:05.512 +05:30 [INF] AuthenticationScheme: Identity.Application was challenged.
+2025-09-15 09:32:05.515 +05:30 [INF] Response:
+StatusCode: 302
+Location: https://localhost:5076/Account/Login?ReturnUrl=%2F
+2025-09-15 09:32:05.523 +05:30 [INF] HTTP GET / responded 302 in 124.4723 ms
+2025-09-15 09:32:05.547 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/ - - - 302 0 - 332.4288ms
+2025-09-15 09:32:05.549 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/Account/Login?ReturnUrl=%2F - -
+2025-09-15 09:32:05.575 +05:30 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /Account/Login
+2025-09-15 09:32:05.605 +05:30 [INF] Executing endpoint 'ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI)'
+2025-09-15 09:32:05.645 +05:30 [INF] Route matched with {action = "Login", controller = "Account", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller ContactManager.UI.Controllers.AccountController (ContactManager.UI).
+2025-09-15 09:32:05.864 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-15 09:32:05.868 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-15 09:32:05.891 +05:30 [INF] Executing ViewResult, running view Login.
+2025-09-15 09:32:06.851 +05:30 [INF] Executed ViewResult - view Login executed in 968.8997ms.
+2025-09-15 09:32:06.857 +05:30 [INF] Executed action ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI) in 1209.1167ms
+2025-09-15 09:32:06.859 +05:30 [INF] Executed endpoint 'ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI)'
+2025-09-15 09:32:06.861 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Mon, 15 Sep 2025 04:02:06 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+My-Key-From-Global: [Redacted]
+2025-09-15 09:32:06.863 +05:30 [INF] HTTP GET /Account/Login responded 200 in 1287.5227 ms
+2025-09-15 09:32:06.903 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/_vs/browserLink - -
+2025-09-15 09:32:06.902 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/_framework/aspnetcore-browser-refresh.js - -
+2025-09-15 09:32:06.908 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/Account/Login?ReturnUrl=%2F - - - 200 - text/html;+charset=utf-8 1358.7427ms
+2025-09-15 09:32:06.909 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/_framework/aspnetcore-browser-refresh.js - - - 200 12366 application/javascript;+charset=utf-8 6.9812ms
+2025-09-15 09:32:06.988 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 85.6538ms
+2025-09-15 09:32:12.758 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/Account/Register - -
+2025-09-15 09:32:12.764 +05:30 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /Account/Register
+2025-09-15 09:32:12.771 +05:30 [INF] Executing endpoint 'ContactManager.UI.Controllers.AccountController.Register (ContactManager.UI)'
+2025-09-15 09:32:12.779 +05:30 [INF] Route matched with {action = "Register", controller = "Account", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register() on controller ContactManager.UI.Controllers.AccountController (ContactManager.UI).
+2025-09-15 09:32:12.797 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-15 09:32:15.187 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-15 09:32:15.194 +05:30 [INF] Executing ViewResult, running view Register.
+2025-09-15 09:32:15.470 +05:30 [INF] Executed ViewResult - view Register executed in 278.7059ms.
+2025-09-15 09:32:15.475 +05:30 [INF] Executed action ContactManager.UI.Controllers.AccountController.Register (ContactManager.UI) in 2690.6683ms
+2025-09-15 09:32:15.477 +05:30 [INF] Executed endpoint 'ContactManager.UI.Controllers.AccountController.Register (ContactManager.UI)'
+2025-09-15 09:32:15.479 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Mon, 15 Sep 2025 04:02:15 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+My-Key-From-Global: [Redacted]
+2025-09-15 09:32:15.481 +05:30 [INF] HTTP GET /Account/Register responded 200 in 2717.2704 ms
+2025-09-15 09:32:15.485 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/Account/Register - - - 200 - text/html;+charset=utf-8 2726.9557ms
+2025-09-15 09:32:15.491 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/_vs/browserLink - -
+2025-09-15 09:32:15.492 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/_framework/aspnetcore-browser-refresh.js - -
+2025-09-15 09:32:15.495 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/_framework/aspnetcore-browser-refresh.js - - - 200 12366 application/javascript;+charset=utf-8 3.5594ms
+2025-09-15 09:32:15.519 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 28.2503ms
+2025-09-15 09:32:29.320 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/Account/ValidateEmail?Email=dada10%40gmail.com - -
+2025-09-15 09:32:29.325 +05:30 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /Account/ValidateEmail
+2025-09-15 09:32:29.329 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-09-15 09:32:29.333 +05:30 [INF] AuthenticationScheme: Identity.Application was challenged.
+2025-09-15 09:32:29.337 +05:30 [INF] Response:
+StatusCode: 401
+Location: https://localhost:5076/Account/Login?ReturnUrl=%2FAccount%2FValidateEmail%3FEmail%3Ddada10%2540gmail.com
+2025-09-15 09:32:29.340 +05:30 [INF] HTTP GET /Account/ValidateEmail responded 401 in 15.3916 ms
+2025-09-15 09:32:29.346 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/Account/ValidateEmail?Email=dada10%40gmail.com - - - 401 0 - 26.4995ms
+2025-09-15 09:32:55.776 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/.well-known/appspecific/com.chrome.devtools.json - -
+2025-09-15 09:32:55.778 +05:30 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /.well-known/appspecific/com.chrome.devtools.json
+2025-09-15 09:32:55.781 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-09-15 09:32:55.783 +05:30 [INF] AuthenticationScheme: Identity.Application was challenged.
+2025-09-15 09:32:55.785 +05:30 [INF] Response:
+StatusCode: 302
+Location: https://localhost:5076/Account/Login?ReturnUrl=%2F.well-known%2Fappspecific%2Fcom.chrome.devtools.json
+2025-09-15 09:32:55.786 +05:30 [INF] HTTP GET /.well-known/appspecific/com.chrome.devtools.json responded 302 in 8.8057 ms
+2025-09-15 09:32:55.789 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/.well-known/appspecific/com.chrome.devtools.json - - - 302 0 - 13.3634ms
+2025-09-15 09:32:55.791 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/Account/Login?ReturnUrl=%2F.well-known%2Fappspecific%2Fcom.chrome.devtools.json - -
+2025-09-15 09:32:55.792 +05:30 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /Account/Login
+2025-09-15 09:32:55.793 +05:30 [INF] Executing endpoint 'ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI)'
+2025-09-15 09:32:55.794 +05:30 [INF] Route matched with {action = "Login", controller = "Account", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller ContactManager.UI.Controllers.AccountController (ContactManager.UI).
+2025-09-15 09:32:55.813 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-15 09:32:55.814 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-15 09:32:55.816 +05:30 [INF] Executing ViewResult, running view Login.
+2025-09-15 09:32:55.823 +05:30 [INF] Executed ViewResult - view Login executed in 7.0998ms.
+2025-09-15 09:32:55.825 +05:30 [INF] Executed action ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI) in 28.2957ms
+2025-09-15 09:32:55.827 +05:30 [INF] Executed endpoint 'ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI)'
+2025-09-15 09:32:55.828 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Mon, 15 Sep 2025 04:02:55 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+My-Key-From-Global: [Redacted]
+2025-09-15 09:32:55.830 +05:30 [INF] HTTP GET /Account/Login responded 200 in 38.0539 ms
+2025-09-15 09:32:55.835 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/Account/Login?ReturnUrl=%2F.well-known%2Fappspecific%2Fcom.chrome.devtools.json - - - 200 - text/html;+charset=utf-8 44.5458ms
+2025-09-15 09:33:00.590 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/Account/ValidateEmail?Email=dada10%40gmail.com - -
+2025-09-15 09:33:00.598 +05:30 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /Account/ValidateEmail
+2025-09-15 09:33:00.600 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-09-15 09:33:00.604 +05:30 [INF] AuthenticationScheme: Identity.Application was challenged.
+2025-09-15 09:33:00.606 +05:30 [INF] Response:
+StatusCode: 302
+Location: https://localhost:5076/Account/Login?ReturnUrl=%2FAccount%2FValidateEmail%3FEmail%3Ddada10%2540gmail.com
+2025-09-15 09:33:00.607 +05:30 [INF] HTTP GET /Account/ValidateEmail responded 302 in 9.4598 ms
+2025-09-15 09:33:00.611 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/Account/ValidateEmail?Email=dada10%40gmail.com - - - 302 0 - 20.6067ms
+2025-09-15 09:33:00.614 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/Account/Login?ReturnUrl=%2FAccount%2FValidateEmail%3FEmail%3Ddada10%2540gmail.com - -
+2025-09-15 09:33:00.617 +05:30 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /Account/Login
+2025-09-15 09:33:00.620 +05:30 [INF] Executing endpoint 'ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI)'
+2025-09-15 09:33:00.622 +05:30 [INF] Route matched with {action = "Login", controller = "Account", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller ContactManager.UI.Controllers.AccountController (ContactManager.UI).
+2025-09-15 09:33:00.626 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-15 09:33:00.628 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-15 09:33:00.630 +05:30 [INF] Executing ViewResult, running view Login.
+2025-09-15 09:33:00.634 +05:30 [INF] Executed ViewResult - view Login executed in 4.3569ms.
+2025-09-15 09:33:00.638 +05:30 [INF] Executed action ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI) in 12.4931ms
+2025-09-15 09:33:00.641 +05:30 [INF] Executed endpoint 'ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI)'
+2025-09-15 09:33:00.643 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Mon, 15 Sep 2025 04:03:00 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+My-Key-From-Global: [Redacted]
+2025-09-15 09:33:00.644 +05:30 [INF] HTTP GET /Account/Login responded 200 in 26.8252 ms
+2025-09-15 09:33:00.647 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/Account/Login?ReturnUrl=%2FAccount%2FValidateEmail%3FEmail%3Ddada10%2540gmail.com - - - 200 - text/html;+charset=utf-8 33.3753ms
+2025-09-15 09:33:00.651 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/_framework/aspnetcore-browser-refresh.js - -
+2025-09-15 09:33:00.654 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/_framework/aspnetcore-browser-refresh.js - - - 200 12366 application/javascript;+charset=utf-8 2.3586ms
+2025-09-15 09:33:00.656 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/_vs/browserLink - -
+2025-09-15 09:33:00.679 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 22.6069ms
+2025-09-15 09:38:41.964 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/.well-known/appspecific/com.chrome.devtools.json - -
+2025-09-15 09:38:41.966 +05:30 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /.well-known/appspecific/com.chrome.devtools.json
+2025-09-15 09:38:41.969 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-09-15 09:38:41.972 +05:30 [INF] AuthenticationScheme: Identity.Application was challenged.
+2025-09-15 09:38:41.974 +05:30 [INF] Response:
+StatusCode: 302
+Location: https://localhost:5076/Account/Login?ReturnUrl=%2F.well-known%2Fappspecific%2Fcom.chrome.devtools.json
+2025-09-15 09:38:41.975 +05:30 [INF] HTTP GET /.well-known/appspecific/com.chrome.devtools.json responded 302 in 9.0719 ms
+2025-09-15 09:38:41.978 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/.well-known/appspecific/com.chrome.devtools.json - - - 302 0 - 14.0622ms
+2025-09-15 09:38:41.980 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/Account/Login?ReturnUrl=%2F.well-known%2Fappspecific%2Fcom.chrome.devtools.json - -
+2025-09-15 09:38:41.981 +05:30 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /Account/Login
+2025-09-15 09:38:41.982 +05:30 [INF] Executing endpoint 'ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI)'
+2025-09-15 09:38:41.984 +05:30 [INF] Route matched with {action = "Login", controller = "Account", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller ContactManager.UI.Controllers.AccountController (ContactManager.UI).
+2025-09-15 09:38:41.989 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-15 09:38:41.990 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-15 09:38:41.993 +05:30 [INF] Executing ViewResult, running view Login.
+2025-09-15 09:38:41.995 +05:30 [INF] Executed ViewResult - view Login executed in 3.3589ms.
+2025-09-15 09:38:41.997 +05:30 [INF] Executed action ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI) in 8.5937ms
+2025-09-15 09:38:41.998 +05:30 [INF] Executed endpoint 'ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI)'
+2025-09-15 09:38:42.000 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Mon, 15 Sep 2025 04:08:41 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+My-Key-From-Global: [Redacted]
+2025-09-15 09:38:42.001 +05:30 [INF] HTTP GET /Account/Login responded 200 in 20.1301 ms
+2025-09-15 09:38:42.004 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/Account/Login?ReturnUrl=%2F.well-known%2Fappspecific%2Fcom.chrome.devtools.json - - - 200 - text/html;+charset=utf-8 23.8333ms
+2025-09-15 09:38:44.628 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/Account/Register - -
+2025-09-15 09:38:44.635 +05:30 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /Account/Register
+2025-09-15 09:38:44.637 +05:30 [INF] Executing endpoint 'ContactManager.UI.Controllers.AccountController.Register (ContactManager.UI)'
+2025-09-15 09:38:44.639 +05:30 [INF] Route matched with {action = "Register", controller = "Account", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register() on controller ContactManager.UI.Controllers.AccountController (ContactManager.UI).
+2025-09-15 09:38:44.642 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-15 09:38:52.676 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-15 09:38:52.688 +05:30 [INF] Executing ViewResult, running view Register.
+2025-09-15 09:38:52.705 +05:30 [INF] Executed ViewResult - view Register executed in 16.4691ms.
+2025-09-15 09:38:52.710 +05:30 [INF] Executed action ContactManager.UI.Controllers.AccountController.Register (ContactManager.UI) in 8067.9798ms
+2025-09-15 09:38:52.717 +05:30 [INF] Executed endpoint 'ContactManager.UI.Controllers.AccountController.Register (ContactManager.UI)'
+2025-09-15 09:38:52.719 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Mon, 15 Sep 2025 04:08:52 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+My-Key-From-Global: [Redacted]
+2025-09-15 09:38:52.720 +05:30 [INF] HTTP GET /Account/Register responded 200 in 8084.5214 ms
+2025-09-15 09:38:52.727 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/Account/Register - - - 200 - text/html;+charset=utf-8 8099.1354ms
+2025-09-15 09:38:52.734 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/Stylesheet.css - -
+2025-09-15 09:38:52.735 +05:30 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /Stylesheet.css
+2025-09-15 09:38:52.754 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/.well-known/appspecific/com.chrome.devtools.json - -
+2025-09-15 09:38:52.756 +05:30 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /.well-known/appspecific/com.chrome.devtools.json
+2025-09-15 09:38:52.758 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-09-15 09:38:52.760 +05:30 [INF] AuthenticationScheme: Identity.Application was challenged.
+2025-09-15 09:38:52.762 +05:30 [INF] Response:
+StatusCode: 302
+Location: https://localhost:5076/Account/Login?ReturnUrl=%2F.well-known%2Fappspecific%2Fcom.chrome.devtools.json
+2025-09-15 09:38:52.764 +05:30 [INF] HTTP GET /.well-known/appspecific/com.chrome.devtools.json responded 302 in 8.8436 ms
+2025-09-15 09:38:52.767 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/.well-known/appspecific/com.chrome.devtools.json - - - 302 0 - 13.3304ms
+2025-09-15 09:38:52.769 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/Account/Login?ReturnUrl=%2F.well-known%2Fappspecific%2Fcom.chrome.devtools.json - -
+2025-09-15 09:38:52.772 +05:30 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /Account/Login
+2025-09-15 09:38:52.774 +05:30 [INF] Executing endpoint 'ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI)'
+2025-09-15 09:38:52.776 +05:30 [INF] Route matched with {action = "Login", controller = "Account", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login() on controller ContactManager.UI.Controllers.AccountController (ContactManager.UI).
+2025-09-15 09:38:52.780 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-15 09:38:52.782 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-15 09:38:52.783 +05:30 [INF] Executing ViewResult, running view Login.
+2025-09-15 09:38:52.785 +05:30 [INF] Executed ViewResult - view Login executed in 2.3115ms.
+2025-09-15 09:38:52.787 +05:30 [INF] Executed action ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI) in 7.3625ms
+2025-09-15 09:38:52.791 +05:30 [INF] Executed endpoint 'ContactManager.UI.Controllers.AccountController.Login (ContactManager.UI)'
+2025-09-15 09:38:52.793 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Mon, 15 Sep 2025 04:08:52 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Pragma: [Redacted]
+My-Key-From-Global: [Redacted]
+2025-09-15 09:38:52.795 +05:30 [INF] HTTP GET /Account/Login responded 200 in 23.2101 ms
+2025-09-15 09:38:52.797 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/Account/Login?ReturnUrl=%2F.well-known%2Fappspecific%2Fcom.chrome.devtools.json - - - 200 - text/html;+charset=utf-8 27.9551ms
+2025-09-15 09:38:52.801 +05:30 [INF] Sending file. Request path: '/Stylesheet.css'. Physical path: 'C:\HarshaGlobal\DadassahebParctice\ContactManagerSolution\ContactManager.UI\wwwroot\StyleSheet.css'
+2025-09-15 09:38:52.803 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: text/css
+Date: Mon, 15 Sep 2025 04:08:52 GMT
+Server: Kestrel
+Accept-Ranges: bytes
+ETag: [Redacted]
+Last-Modified: Thu, 26 Jun 2025 15:31:58 GMT
+Content-Length: 10279
+2025-09-15 09:38:52.804 +05:30 [INF] HTTP GET /Stylesheet.css responded 200 in 69.1181 ms
+2025-09-15 09:38:52.807 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/Stylesheet.css - - - 200 10279 text/css 72.9795ms
+2025-09-15 09:38:52.823 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/_framework/aspnetcore-browser-refresh.js - -
+2025-09-15 09:38:52.824 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/_framework/aspnetcore-browser-refresh.js - - - 200 12366 application/javascript;+charset=utf-8 2.0771ms
+2025-09-15 09:38:52.864 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/_vs/browserLink - -
+2025-09-15 09:38:52.870 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/jquery.validate.unobtrusive.min.js - -
+2025-09-15 09:38:52.876 +05:30 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /jquery.validate.unobtrusive.min.js
+2025-09-15 09:38:52.878 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 14.8541ms
+2025-09-15 09:38:52.999 +05:30 [INF] Sending file. Request path: '/jquery.validate.unobtrusive.min.js'. Physical path: 'C:\HarshaGlobal\DadassahebParctice\ContactManagerSolution\ContactManager.UI\wwwroot\jquery.validate.unobtrusive.min.js'
+2025-09-15 09:38:53.003 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: application/javascript
+Date: Mon, 15 Sep 2025 04:08:52 GMT
+Server: Kestrel
+Accept-Ranges: bytes
+ETag: [Redacted]
+Last-Modified: Thu, 26 Jun 2025 15:31:58 GMT
+Content-Length: 5867
+2025-09-15 09:38:53.005 +05:30 [INF] HTTP GET /jquery.validate.unobtrusive.min.js responded 200 in 128.8699 ms
+2025-09-15 09:38:53.008 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/jquery.validate.unobtrusive.min.js - - - 200 5867 application/javascript 138.6023ms
+2025-09-15 09:38:53.060 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/favicon.ico - -
+2025-09-15 09:38:53.062 +05:30 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /favicon.ico
+2025-09-15 09:38:53.084 +05:30 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\HarshaGlobal\DadassahebParctice\ContactManagerSolution\ContactManager.UI\wwwroot\favicon.ico'
+2025-09-15 09:38:53.087 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: image/x-icon
+Date: Mon, 15 Sep 2025 04:08:52 GMT
+Server: Kestrel
+Accept-Ranges: bytes
+ETag: [Redacted]
+Last-Modified: Tue, 09 Sep 2025 14:49:19 GMT
+Content-Length: 5430
+2025-09-15 09:38:53.090 +05:30 [INF] HTTP GET /favicon.ico responded 200 in 27.2956 ms
+2025-09-15 09:38:53.093 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/favicon.ico - - - 200 5430 image/x-icon 33.3629ms
+2025-09-15 09:48:16.115 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/Account/ValidateEmail?Email=dada11%40g - -
+2025-09-15 09:48:16.128 +05:30 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /Account/ValidateEmail
+2025-09-15 09:48:16.131 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-09-15 09:48:16.134 +05:30 [INF] AuthenticationScheme: Identity.Application was challenged.
+2025-09-15 09:48:16.137 +05:30 [INF] Response:
+StatusCode: 401
+Location: https://localhost:5076/Account/Login?ReturnUrl=%2FAccount%2FValidateEmail%3FEmail%3Ddada11%2540g
+2025-09-15 09:48:16.139 +05:30 [INF] HTTP GET /Account/ValidateEmail responded 401 in 11.5335 ms
+2025-09-15 09:48:16.145 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/Account/ValidateEmail?Email=dada11%40g - - - 401 0 - 30.4820ms
+2025-09-15 09:48:16.438 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/Account/ValidateEmail?Email=dada11%40gm - -
+2025-09-15 09:48:16.443 +05:30 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /Account/ValidateEmail
+2025-09-15 09:48:16.447 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-09-15 09:48:16.452 +05:30 [INF] AuthenticationScheme: Identity.Application was challenged.
+2025-09-15 09:48:16.458 +05:30 [INF] Response:
+StatusCode: 401
+Location: https://localhost:5076/Account/Login?ReturnUrl=%2FAccount%2FValidateEmail%3FEmail%3Ddada11%2540gm
+2025-09-15 09:48:16.462 +05:30 [INF] HTTP GET /Account/ValidateEmail responded 401 in 18.4793 ms
+2025-09-15 09:48:16.470 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/Account/ValidateEmail?Email=dada11%40gm - - - 401 0 - 32.1337ms
+2025-09-15 09:48:16.708 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/Account/ValidateEmail?Email=dada11%40gmai - -
+2025-09-15 09:48:16.712 +05:30 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /Account/ValidateEmail
+2025-09-15 09:48:16.715 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-09-15 09:48:16.718 +05:30 [INF] AuthenticationScheme: Identity.Application was challenged.
+2025-09-15 09:48:16.722 +05:30 [INF] Response:
+StatusCode: 401
+Location: https://localhost:5076/Account/Login?ReturnUrl=%2FAccount%2FValidateEmail%3FEmail%3Ddada11%2540gmai
+2025-09-15 09:48:16.725 +05:30 [INF] HTTP GET /Account/ValidateEmail responded 401 in 12.8402 ms
+2025-09-15 09:48:16.730 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/Account/ValidateEmail?Email=dada11%40gmai - - - 401 0 - 22.2488ms
+2025-09-15 09:48:17.165 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/Account/ValidateEmail?Email=dada11%40gmail - -
+2025-09-15 09:48:17.169 +05:30 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /Account/ValidateEmail
+2025-09-15 09:48:17.172 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-09-15 09:48:17.177 +05:30 [INF] AuthenticationScheme: Identity.Application was challenged.
+2025-09-15 09:48:17.181 +05:30 [INF] Response:
+StatusCode: 401
+Location: https://localhost:5076/Account/Login?ReturnUrl=%2FAccount%2FValidateEmail%3FEmail%3Ddada11%2540gmail
+2025-09-15 09:48:17.185 +05:30 [INF] HTTP GET /Account/ValidateEmail responded 401 in 16.2943 ms
+2025-09-15 09:48:17.193 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/Account/ValidateEmail?Email=dada11%40gmail - - - 401 0 - 28.5228ms
+2025-09-15 09:48:17.877 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/Account/ValidateEmail?Email=dada11%40gmail.c - -
+2025-09-15 09:48:17.883 +05:30 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /Account/ValidateEmail
+2025-09-15 09:48:17.888 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-09-15 09:48:17.893 +05:30 [INF] AuthenticationScheme: Identity.Application was challenged.
+2025-09-15 09:48:17.900 +05:30 [INF] Response:
+StatusCode: 401
+Location: https://localhost:5076/Account/Login?ReturnUrl=%2FAccount%2FValidateEmail%3FEmail%3Ddada11%2540gmail.c
+2025-09-15 09:48:17.905 +05:30 [INF] HTTP GET /Account/ValidateEmail responded 401 in 22.0803 ms
+2025-09-15 09:48:17.916 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/Account/ValidateEmail?Email=dada11%40gmail.c - - - 401 0 - 38.6254ms
+2025-09-15 09:48:18.110 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/Account/ValidateEmail?Email=dada11%40gmail.co - -
+2025-09-15 09:48:18.117 +05:30 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /Account/ValidateEmail
+2025-09-15 09:48:18.121 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-09-15 09:48:18.127 +05:30 [INF] AuthenticationScheme: Identity.Application was challenged.
+2025-09-15 09:48:18.133 +05:30 [INF] Response:
+StatusCode: 401
+Location: https://localhost:5076/Account/Login?ReturnUrl=%2FAccount%2FValidateEmail%3FEmail%3Ddada11%2540gmail.co
+2025-09-15 09:48:18.137 +05:30 [INF] HTTP GET /Account/ValidateEmail responded 401 in 20.7129 ms
+2025-09-15 09:48:18.148 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/Account/ValidateEmail?Email=dada11%40gmail.co - - - 401 0 - 38.5188ms
+2025-09-15 09:48:18.288 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/Account/ValidateEmail?Email=dada11%40gmail.com - -
+2025-09-15 09:48:18.294 +05:30 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /Account/ValidateEmail
+2025-09-15 09:48:18.299 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-09-15 09:48:18.307 +05:30 [INF] AuthenticationScheme: Identity.Application was challenged.
+2025-09-15 09:48:18.316 +05:30 [INF] Response:
+StatusCode: 401
+Location: https://localhost:5076/Account/Login?ReturnUrl=%2FAccount%2FValidateEmail%3FEmail%3Ddada11%2540gmail.com
+2025-09-15 09:48:18.323 +05:30 [INF] HTTP GET /Account/ValidateEmail responded 401 in 29.6625 ms
+2025-09-15 09:48:18.340 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/Account/ValidateEmail?Email=dada11%40gmail.com - - - 401 0 - 51.9445ms
+2025-09-15 09:48:36.128 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/Account/ValidateEmail?Email=dada11%40gmail.co - -
+2025-09-15 09:48:36.143 +05:30 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /Account/ValidateEmail
+2025-09-15 09:48:36.145 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-09-15 09:48:36.147 +05:30 [INF] AuthenticationScheme: Identity.Application was challenged.
+2025-09-15 09:48:36.150 +05:30 [INF] Response:
+StatusCode: 401
+Location: https://localhost:5076/Account/Login?ReturnUrl=%2FAccount%2FValidateEmail%3FEmail%3Ddada11%2540gmail.co
+2025-09-15 09:48:36.152 +05:30 [INF] HTTP GET /Account/ValidateEmail responded 401 in 9.3395 ms
+2025-09-15 09:48:36.155 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/Account/ValidateEmail?Email=dada11%40gmail.co - - - 401 0 - 26.6108ms
+2025-09-15 09:48:36.884 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/Account/ValidateEmail?Email=dada11%40gmail.com - -
+2025-09-15 09:48:36.886 +05:30 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /Account/ValidateEmail
+2025-09-15 09:48:36.888 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-09-15 09:48:36.891 +05:30 [INF] AuthenticationScheme: Identity.Application was challenged.
+2025-09-15 09:48:36.894 +05:30 [INF] Response:
+StatusCode: 401
+Location: https://localhost:5076/Account/Login?ReturnUrl=%2FAccount%2FValidateEmail%3FEmail%3Ddada11%2540gmail.com
+2025-09-15 09:48:36.896 +05:30 [INF] HTTP GET /Account/ValidateEmail responded 401 in 10.4040 ms
+2025-09-15 09:48:36.903 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/Account/ValidateEmail?Email=dada11%40gmail.com - - - 401 0 - 19.9707ms
+2025-09-15 09:48:46.942 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/Account/ValidateEmail?Email=dada11%40gmail.co - -
+2025-09-15 09:48:46.945 +05:30 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /Account/ValidateEmail
+2025-09-15 09:48:46.947 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-09-15 09:48:46.949 +05:30 [INF] AuthenticationScheme: Identity.Application was challenged.
+2025-09-15 09:48:46.951 +05:30 [INF] Response:
+StatusCode: 401
+Location: https://localhost:5076/Account/Login?ReturnUrl=%2FAccount%2FValidateEmail%3FEmail%3Ddada11%2540gmail.co
+2025-09-15 09:48:46.952 +05:30 [INF] HTTP GET /Account/ValidateEmail responded 401 in 7.4944 ms
+2025-09-15 09:48:46.954 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/Account/ValidateEmail?Email=dada11%40gmail.co - - - 401 0 - 12.4751ms

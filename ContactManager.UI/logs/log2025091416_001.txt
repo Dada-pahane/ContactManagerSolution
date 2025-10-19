@@ -1,0 +1,117 @@
+2025-09-14 16:14:56.229 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2025-09-14 16:14:56.301 +05:30 [INF] Hosting environment: Development
+2025-09-14 16:14:56.307 +05:30 [INF] Content root path: C:\HarshaGlobal\DadassahebParctice\ContactManagerSolution\ContactManager.UI\
+2025-09-14 16:47:19.196 +05:30 [INF] User profile is available. Using 'C:\Users\Admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-09-14 16:47:19.745 +05:30 [INF] Now listening on: https://localhost:5076
+2025-09-14 16:47:20.507 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/ - -
+2025-09-14 16:47:20.687 +05:30 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /
+2025-09-14 16:47:23.250 +05:30 [INF] Entity Framework Core 6.0.36 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None
+2025-09-14 16:47:24.324 +05:30 [INF] Executed DbCommand (158ms) [Parameters=[@__get_Item_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PersonName], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__get_Item_0
+2025-09-14 16:47:24.801 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@__user_Id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2025-09-14 16:47:24.950 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2025-09-14 16:47:25.009 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0
+2025-09-14 16:47:25.082 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__role_Id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0
+2025-09-14 16:47:25.151 +05:30 [INF] Executing endpoint 'CRUDExample.Controllers.PersonsController.Index (ContactManager.UI)'
+2025-09-14 16:47:25.251 +05:30 [INF] Route matched with {action = "Index", controller = "Persons", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, System.String, System.String, ServiceContracts.Enums.SortOrderOptions) on controller CRUDExample.Controllers.PersonsController (ContactManager.UI).
+2025-09-14 16:47:25.310 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-14 16:47:25.314 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-14 16:47:25.319 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-14 16:47:25.324 +05:30 [INF] PersonsListActionFilter.OnActionExecuting method
+2025-09-14 16:47:25.337 +05:30 [INF] Index action method of PersonsController
+2025-09-14 16:47:25.350 +05:30 [INF] GetFilteredPersons of PersonsService
+2025-09-14 16:47:25.360 +05:30 [INF] GetFilteredPersons of PersonsRepository
+2025-09-14 16:47:25.567 +05:30 [INF] Executed DbCommand (15ms) [Parameters=[@__searchString_0='?' (Size = 40)], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[PersonID], [p].[Address], [p].[CountryID], [p].[DateOfBirth], [p].[Email], [p].[Gender], [p].[PersonName], [p].[ReceiveNewsLetters], [p].[TaxIdentificationNumber], [c].[CountryID], [c].[CountryName]
+FROM [Persons] AS [p]
+LEFT JOIN [Countries] AS [c] ON [p].[CountryID] = [c].[CountryID]
+WHERE (@__searchString_0 LIKE N'') OR (CHARINDEX(@__searchString_0, [p].[PersonName]) > 0)
+2025-09-14 16:47:25.728 +05:30 [INF] Time for Filtered Persons from Database completed in 368.3 ms
+2025-09-14 16:47:25.765 +05:30 [INF] GetSortedPersons of PersonsService
+2025-09-14 16:47:25.805 +05:30 [INF] PersonsListActionFilter.OnActionExecuted method
+2025-09-14 16:47:26.184 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-14 16:47:26.190 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-14 16:47:26.194 +05:30 [INF] Before logic - ResponseHeaderActionFilter
+2025-09-14 16:47:26.207 +05:30 [INF] PersonsListResultFilter.OnResultExecutionAsync - before
+2025-09-14 16:47:26.241 +05:30 [INF] Executing ViewResult, running view Index.
+2025-09-14 16:47:33.057 +05:30 [INF] Executed ViewResult - view Index executed in 6819.7715ms.
+2025-09-14 16:47:33.062 +05:30 [INF] PersonsListResultFilter.OnResultExecutionAsync - after
+2025-09-14 16:47:33.071 +05:30 [INF] Executed action CRUDExample.Controllers.PersonsController.Index (ContactManager.UI) in 7811.4549ms
+2025-09-14 16:47:33.073 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/Stylesheet.css - -
+2025-09-14 16:47:33.077 +05:30 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /Stylesheet.css
+2025-09-14 16:47:33.078 +05:30 [INF] Executed endpoint 'CRUDExample.Controllers.PersonsController.Index (ContactManager.UI)'
+2025-09-14 16:47:33.079 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/_framework/aspnetcore-browser-refresh.js - -
+2025-09-14 16:47:33.079 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/_vs/browserLink - -
+2025-09-14 16:47:33.093 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: text/html; charset=utf-8
+Date: Sun, 14 Sep 2025 11:17:32 GMT
+Server: Kestrel
+Cache-Control: [Redacted]
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Last-Modified: 2025-09-14 16:47
+Pragma: [Redacted]
+Set-Cookie: [Redacted]
+My-Key-From-Global: [Redacted]
+MyKey-FromAction: [Redacted]
+My-Key-From-Controller: [Redacted]
+2025-09-14 16:47:33.100 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/_framework/aspnetcore-browser-refresh.js - - - 200 12366 application/javascript;+charset=utf-8 18.9485ms
+2025-09-14 16:47:33.109 +05:30 [INF] HTTP GET / responded 200 in 12422.2757 ms
+2025-09-14 16:47:33.140 +05:30 [INF] Sending file. Request path: '/Stylesheet.css'. Physical path: 'C:\HarshaGlobal\DadassahebParctice\ContactManagerSolution\ContactManager.UI\wwwroot\StyleSheet.css'
+2025-09-14 16:47:33.146 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: text/css
+Date: Sun, 14 Sep 2025 11:17:32 GMT
+Server: Kestrel
+Accept-Ranges: bytes
+ETag: [Redacted]
+Last-Modified: Thu, 26 Jun 2025 15:31:58 GMT
+Content-Length: 10279
+2025-09-14 16:47:33.150 +05:30 [INF] HTTP GET /Stylesheet.css responded 200 in 72.9046 ms
+2025-09-14 16:47:33.159 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/Stylesheet.css - - - 200 10279 text/css 86.0020ms
+2025-09-14 16:47:33.176 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/ - - - 200 - text/html;+charset=utf-8 12680.4597ms
+2025-09-14 16:47:33.230 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 150.4199ms
+2025-09-14 16:47:33.559 +05:30 [INF] Request starting HTTP/2 GET https://localhost:5076/favicon.ico - -
+2025-09-14 16:47:33.566 +05:30 [INF] Request:
+Protocol: HTTP/2
+Method: GET
+Scheme: https
+PathBase: 
+Path: /favicon.ico
+2025-09-14 16:47:33.576 +05:30 [INF] Sending file. Request path: '/favicon.ico'. Physical path: 'C:\HarshaGlobal\DadassahebParctice\ContactManagerSolution\ContactManager.UI\wwwroot\favicon.ico'
+2025-09-14 16:47:33.586 +05:30 [INF] Response:
+StatusCode: 200
+Content-Type: image/x-icon
+Date: Sun, 14 Sep 2025 11:17:32 GMT
+Server: Kestrel
+Accept-Ranges: bytes
+ETag: [Redacted]
+Last-Modified: Tue, 09 Sep 2025 14:49:19 GMT
+Content-Length: 5430
+2025-09-14 16:47:33.590 +05:30 [INF] HTTP GET /favicon.ico responded 200 in 23.8590 ms
+2025-09-14 16:47:33.599 +05:30 [INF] Request finished HTTP/2 GET https://localhost:5076/favicon.ico - - - 200 5430 image/x-icon 39.2280ms
